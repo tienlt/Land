@@ -1,0 +1,40 @@
+# Your translations go here. To be used with the 'translate' liquid filter
+# Example:
+#   {{ 'hello_world' | translate }}
+#
+
+# hello_world:
+#   en: Hello world !
+#   fr: Bonjour le monde !
+
+language:
+  en: Language
+  da: Sprog
+
+log_in: 
+  en: Log In
+  da: Log Ind
+
+sign_up:
+  en: Sign Up 
+  da: Tilmeld
+
+testing_environment:
+  en: Testing environment 
+  da: Testmiljø
+
+follow_us: 
+  en: Follow us
+  da: Følg os
+
+all_rights_reserved: 
+  en: All Rights Reserved
+  da: Alle rettigheder forbeholdes
+
+get_started_now: 
+  en: Get started now
+  da: Start nu
+
+locales:
+  en: en
+  da: da

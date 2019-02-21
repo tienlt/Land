@@ -1,0 +1,12 @@
+%footer.footer
+  .row.footer.navbar-blue.footer-bottom{:style => "color: white; position: static; margin-top: 15px;"}
+    .ft-txt.pull-left {{ 'follow_us' | translate }}
+    .socials.pull-left
+      %span
+        %a{:href => "https://www.linkedin.com/company/product-data-lake", :target => "_blank"}
+          <img src="{{ 'icon-linkendin.png' | theme_image_url }}" alt="" />
+      %span
+        %a{:href => "https://twitter.com/ProductDataLake", :target => "_blank"}
+          <img src="{{ 'icon-twitter.png' | theme_image_url }}" alt="" />
+    .cp.pull-right
+      %p{"data-target" => "#addressmodal", "data-toggle" => "modal", :style => "cursor: pointer;"} &copy; 2016 Product Data Lake {{ 'all_rights_reserved' | translate }} .

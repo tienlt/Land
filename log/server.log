@@ -1,0 +1,7 @@
+# Logfile created on 2019-02-15 15:32:35 +0700 by logger.rb/54362
+I, [2019-02-15T15:32:35.507402 #11723]  INFO -- : Thin web server (v1.6.4 codename Gob Bluth)
+I, [2019-02-15T15:32:35.507500 #11723]  INFO -- : Maximum connections set to 1024
+I, [2019-02-15T15:32:35.507519 #11723]  INFO -- : Listening on 0.0.0.0:3333, CTRL+C to stop
+I, [2019-02-19T08:55:20.177472 #19556]  INFO -- : Thin web server (v1.6.4 codename Gob Bluth)
+I, [2019-02-19T08:55:20.189811 #19556]  INFO -- : Maximum connections set to 1024
+I, [2019-02-19T08:55:20.189919 #19556]  INFO -- : Listening on 0.0.0.0:3333, CTRL+C to stop

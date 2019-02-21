@@ -1,0 +1,20 @@
+%nav#top-hea.row.navbar.navbar-blue.navbar-static-top{:role => "navigation", :style => "margin-bottom: 0px; min-width: 101%; position: fixed; height: 90px;"}
+  %center
+    .navbar-logo
+      #navbar-id.navbar-brand
+        %a
+          <img src="{{ 'img/logo_menu.png' | theme_image_url }}" alt="Logo menu" />
+        //%a{:style => "color:white; font-size:14px; padding-right: 30px;"} Testing Environment
+  %ul#top-nav.nav.navbar-top-links.navbar-right.nav-top-75
+    %li.false
+      %label.col-sm-4.control-label{:for => "", :style => "padding-top: 25px; text-align: right"}{{ 'language' | translate }}
+      .col-sm-8{:style => "padding-top: 20px"}
+        .input-group
+          %select#multi-languages.form-control{:name => "multi-languages", :style => "height:35px; width:auto;"}
+            %option{:value => "da"} da-DK/ Danish - Denmark                 
+            %option{:selected => 'selected',:value => "en"} en-GB/ English - United Kingdom            
+            %option{:value => "en"} en-US/ English - United States       
+    %li
+      %a#logintext{:href => "{{site.metafields.pdl.url}}" + "{{'locales' | translate }}" + "#login", :style => "color:white; padding: 10"}
+        %i.false>
+        {{ 'log_in' | translate }}
