@@ -28,80 +28,7 @@
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-40.wp-custom-logo.right-sidebar
     #page.site
-      %header#masthead.site-header.header.primary-header.header-logo-text{:role => "banner"}
-        .top-bar
-          .container
-            .row
-              .col.col-1-of-2.top-left
-                .social-links
-                / .social-links
-              / .col
-              .col.col-1-of-2.top-right
-                %form.search-form{:action => "http://soerensen.fr/psi/UK/", :method => "get", :role => "search"}
-                  %label
-                    %span.screen-reader-text Search for:
-                    %input.search-field{:name => "s", :placeholder => "Search …", :type => "search", :value => ""}/
-                  %input.search-submit{:type => "submit", :value => "Search"}/
-              / .col
-            / .row
-          / .container
-        / .top-bar
-        .contact-info-section
-          .container
-            .row
-              .col.col-1-of-4
-                .site-branding
-                  %a.custom-logo-link{:href => "http://soerensen.fr/psi/UK/", :itemprop => "url", :rel => "home"}
-                    %img.custom-logo{:alt => "Product Data Lake", :height => "150", :itemprop => "logo", :sizes => "(max-width: 686px) 100vw, 686px", :src => "http://soerensen.fr/psi/UK/wp-content/uploads/2019/01/OneLineWhiteBold-720x150-tilrettet.png", :srcset => "http://soerensen.fr/psi/UK/wp-content/uploads/2019/01/OneLineWhiteBold-720x150-tilrettet.png 686w, http://soerensen.fr/psi/UK/wp-content/uploads/2019/01/OneLineWhiteBold-720x150-tilrettet-300x66.png 300w", :width => "686"}/
-                  %p.site-description Let product data flow easily between trading partners
-                / .site-branding
-              / .col
-              .col.col-3-of-4
-                .contact-information-wrapper
-                  .contact-information
-                    %dl
-                      %dt
-                        %i.fa.fa-envelope
-                      %dd
-                        %p
-                          %a{:href => "mailto:info@productdatalake.com"} info@productdatalake.com
-                          %br/
-                          %br/
-                          %a{:href => "/da"} DANISH
-                / .contact-information
-              / .col
-        / .contact-info-section
-        .full-nav-menu
-          .container
-            .row
-              .col.col-1-of-1
-                %nav.main-navigation
-                  %ul#menu-main-menu.menu
-                    %li.menu-item
-                      %a{:href => "http://soerensen.fr/psi/UK/"} Home
-                    %li.page_item.page-item-37
-                      %a{:href => "http://soerensen.fr/psi/UK/blog/"}
-                        %span.dojodigital_toggle_title Blog
-                    %li.page_item.page-item-51
-                      %a{:href => "http://soerensen.fr/psi/UK/choose-your-business/"}
-                        %span.dojodigital_toggle_title Choose your business
-                    %li.page_item.page-item-56.page_item_has_children
-                      %a{:href => "http://soerensen.fr/psi/UK/information/"}
-                        %span.dojodigital_toggle_title Information
-                    %li.page_item.page-item-58
-                      %a{:href => "http://soerensen.fr/psi/UK/log-on/"}
-                        %span.dojodigital_toggle_title Log on
-                / .main-navigation
-                %form.search-form{:action => "http://soerensen.fr/psi/UK/", :method => "get", :role => "search"}
-                  %label
-                    %span.screen-reader-text Search for:
-                    %input.search-field{:name => "s", :placeholder => "Search …", :type => "search", :value => ""}/
-                  %input.search-submit{:type => "submit", :value => "Search"}/
-              / .col
-            / .row
-          / .container
-        / .full-nav-menu
-      / #masthead
+      {% include 'header_en' %}
       #main-slider
         .owl-carousel
           .item{:style => "background-image: url(http://soerensen.fr/psi/UK/wp-content/uploads/2019/01/iStock-908478148-slide.jpg); "}
@@ -123,28 +50,83 @@
                 .col.col-1-of-1
                   %header.entry-header.heading
                 / .col
+                .col.col-1-of-2
+                  %article.blog-post
+                    .entry-thumbnail
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "http://soerensen.fr/psi/UK/wp-content/uploads/2019/01/Gepard-260x250.jpg", :width => "260"}/
+                      .thumbhover
+                        %a.more-link.btn-business.v-center{:href => "http://soerensen.fr/psi/UK/2019/02/19/flashtest-your-business/"} Read More
+                    / .entry-thumbnail
+                    .blog-content
+                      %header.entry-header
+                        %h3.entry-title
+                          %a{:href => "http://soerensen.fr/psi/UK/2019/02/19/flashtest-your-business/"} Flashtest Your Business
+                      / .entry-header
+                      .entry-content
+                        %p
+                          Test om Jeres virksomhed udveksler produktdata i sneglefart eller som som en gepard.. powered by...
+                    / .blog-content
+                  / .blog-post
+                / .col
+                .col.col-1-of-2
+                  %article.blog-post
+                    .entry-thumbnail
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "http://soerensen.fr/psi/UK/wp-content/uploads/2019/01/iStock-912944158-260x250.jpg", :width => "260"}/
+                      .thumbhover
+                        %a.more-link.btn-business.v-center{:href => "http://soerensen.fr/psi/UK/2019/02/19/become-ambassador-to-product-data-lake/"} Read More
+                    / .entry-thumbnail
+                    .blog-content
+                      %header.entry-header
+                        %h3.entry-title
+                          %a{:href => "http://soerensen.fr/psi/UK/2019/02/19/become-ambassador-to-product-data-lake/"} Become Ambassador to Product Data Lake
+                      / .entry-header
+                      .entry-content
+                        %p
+                          Synes du at Product Data Lakes syn på den fremtidige måde at dele produktdata på...
+                    / .blog-content
+                  / .blog-post
+                / .col
+                .col.col-1-of-2
+                  %article.blog-post
+                    .entry-thumbnail
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "http://soerensen.fr/psi/UK/wp-content/uploads/2019/01/iStock-873806068-260x250.jpg", :width => "260"}/
+                      .thumbhover
+                        %a.more-link.btn-business.v-center{:href => "http://soerensen.fr/psi/UK/2019/02/19/free-trial/"} Read More
+                    / .entry-thumbnail
+                    .blog-content
+                      %header.entry-header
+                        %h3.entry-title
+                          %a{:href => "http://soerensen.fr/psi/UK/2019/02/19/free-trial/"} Free Trial
+                      / .entry-header
+                      .entry-content
+                        %p
+                          Log på Product Data Lake og test. Første måned er gratis. Du kan også sende...
+                    / .blog-content
+                  / .blog-post
+                / .col
+                .col.col-1-of-2
+                  %article.blog-post
+                    .entry-thumbnail
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "http://soerensen.fr/psi/UK/wp-content/uploads/2019/01/iStock-1046171366-260x250.jpg", :width => "260"}/
+                      .thumbhover
+                        %a.more-link.btn-business.v-center{:href => "http://soerensen.fr/psi/UK/2019/02/19/stay-up-to-date-with-the-latest-news/"} Read More
+                    / .entry-thumbnail
+                    .blog-content
+                      %header.entry-header
+                        %h3.entry-title
+                          %a{:href => "http://soerensen.fr/psi/UK/2019/02/19/stay-up-to-date-with-the-latest-news/"} Stay Up to Date with the Latest News
+                      / .entry-header
+                      .entry-content
+                        %p
+                          Ønsker du at holde dig a jour med hvad der sker inden for Big data,...
+                    / .blog-content
+                  / .blog-post
+                / .col
               / .row
             / .container
           / .blog-news
         / #main
       / #primary
-      #content.site-content
-        .container
-          .row
-            #primary.content-area.col.col-2-of-3
-              %main#main.site-main{:role => "main"}
-                %article#post-40.post-40.page.type-page.status-publish.hentry
-                  %header.entry-header
-                    %h1.entry-title Welcome
-                  / .entry-header
-                  .entry-content
-                  / .entry-content
-                / #post-##
-              / #main
-            / #primary
-          / .row
-        / .container
-      / #content
       %footer#colophon.site-footer{:role => "contentinfo"}
         #site-generator.site-info
           .container
