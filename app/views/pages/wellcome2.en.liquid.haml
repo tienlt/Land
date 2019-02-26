@@ -23,7 +23,7 @@
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_da' %}
+      {% include 'header_en' %}
       #primary-home.content-area
         %main#main.site-main{:role => "main"}
           %section.blog-news
@@ -31,23 +31,27 @@
               .row
                 #primary.content-area.col.col-2-of-3
                   %main#main.site-main{:role => "main"}
-                    %article#post-728.post-728.page.type-page.status-publish.hentry
+                    %article#post-1147.post-1147.page.type-page.status-publish.has-post-thumbnail.hentry
                       %header.entry-header
-                        %h1.entry-title About Product Lake Data
+                        %h1.entry-title Sådan kommer du i gang
                       / .entry-header
                       .entry-content
                         .pf-content
-                          %p Product Data Lake (PDL) er en fuldt udviklet cloud baseret IT-løsning til udveksling af produktdata imellem handelspartnere. PDL er ”drop box” lignende tjeneste, hvor 2 handelspartnere kan udveksle produktinformationer helt automatisk. PDL kan også binde handelspartneres ERP og PIM systemer sammen. Når en part ”up loader” data ”pushes” de automatisk ind i ”Product Data Lake” som så konverterer dem til at kunne pushes videre ind i samhandelspartnernes forskellige systemer. Hver enkelt partner har en unik profil, så det er kun de informationer som ”up loader´en” bestemmer hver enkelt partner skal have, som frigives.
-                          %p PDL er udviklet af specialister med den største viden og erfaring inden for Big Data og Master Data Magement systemer og med stor viden om den teknolog der kommer til styre fremtidens løsninger inden for udveksling af produktdata. Det gælder på tværs af brancher og lande.
-                          %p Product Data Lake drives af Henrik Engel, CEO og Henrik Liliendahl, CTO.
+                          %p
+                            Det er nemt at komme igang og prøve Product Data Lake. Opret en konto og begynd at lægge dine data ind. Det er den bedste måde at prøve systemet af på uden det koster dig noget. De 2 første måneder er gratis. Følg vejledning
+                            %a{:href => "http://www.soerensen.fr/psi/wordpress/?page_id=1097"} “Getting started”.
+                          %p
+                            Vi hjælper dig hvis du skulle have brug for hjælp eller ønsker mere information.
+                            = succeed "." do
+                              %a{:href => "http://www.soerensen.fr/psi/wordpress/?page_id=1013"} Kontakt os her – link
                       / .entry-content
                     / #post-##
                   / #main
                 / #primary
                 #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
                   .sidebar
-                    %aside#media_image-2.widget.widget_media_image
-                      %img.image.wp-image-1058.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/iStock-1046171366-260x250.jpg{% endeditable_file %}",:style => "max-width: 100%; height: auto;", :width => "300"}/
+                    %aside#media_image-11.widget.widget_media_image
+                      %img.image.wp-image-1095.attachment-medium.size-medium{:alt => "", :height => "200", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/iStock-903770892-300x200.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
                 / #secondary
               / .row
             / .container

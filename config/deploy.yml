@@ -1,3 +1,9 @@
+local:
+  host: localhost:3000
+  handle: harmonious-summit-7401
+  email: abc111@gmail.com
+  api_key: c0dcb2e4a39bb286721b99f4c138e4d9c9782185
+  
 staging:
   host: station.locomotive.works
   handle: my-site-staging
