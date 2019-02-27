@@ -9,7 +9,6 @@
     %link{:href => "//www.soerensen.fr", :rel => "dns-prefetch"}/
     %link{:href => "//fonts.googleapis.com", :rel => "dns-prefetch"}/
     %link{:href => "//s.w.org", :rel => "dns-prefetch"}/
-
     {{ 'columns.css' | stylesheet_tag }}
     {{ 'styles.css' | stylesheet_tag }}
     {{ 'cookie-law-info-gdpr.css' | stylesheet_tag }}
@@ -19,7 +18,6 @@
     {{ 'owl-carousel.css' | stylesheet_tag }}
     {{ 'application.css' | stylesheet_tag }}
     {{ 'responsive.css' | stylesheet_tag }}
-
     %link#font-awesome-css{:href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
     %link#business-hub-fonts-css{:href => "https://fonts.googleapis.com/css?family=Exo+2%3A300%2C400%2C500%2C500i%2C600%2C700%2C900%7CRoboto%3A300%2C400%2C500%2C700%2C900&subset=latin%2Clatin-ext", :media => "all", :rel => "stylesheet", :type => "text/css"}/
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
@@ -180,13 +178,8 @@
       / #content
       {% include 'foot' %}
     / #page
-    #cookie-law-info-bar
-      %span
-        This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.
-        %a#cookie_action_close_header.medium.cli-plugin-button.cli-plugin-main-button.cookie_action_close_header.cli_action_button{"data-cli_action" => "accept", :href => "#"} Accept
-        %a#CONSTANT_OPEN_URL.cli-plugin-main-link{:href => "/samples/Product-Data-Lake-Terms-of-Service-and-Privacy-Policy-201810.pdf", :target => "_blank"} Read More
-    #cookie-law-info-again
-      %span#cookie_hdr_showagain Privacy &amp; Cookies Policy
+    {% include 'cookie1' %}
+    {% include 'cookie2' %}
     .cli-modal-backdrop.cli-fade.cli-settings-overlay
     .cli-modal-backdrop.cli-fade.cli-popupbar-overlay
       /* ]]> */

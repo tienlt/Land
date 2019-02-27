@@ -1,3 +1,35 @@
+---
+title: Blog7.en
+
+# true if the page is included in the menu
+listed: true
+
+# true if the page is published
+published: true
+
+# true if the page can be used as a layout for new pages created by the editors
+# is_layout: true
+
+# position among sibling pages
+# position: 1
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# other unique identifier of this page. To be used with the path_to liquid tag.
+# handle: my-page-handle
+
+# content type that this page is templatizing
+# content_type: "<slug of one of the content types>"
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+
+# Control the display of the page in the back-office.
+# display_settings:
+#   hidden: true          # hidden for authors?
+---
 !!!
 %html{:lang => "en-US"}
   %head
@@ -23,52 +55,34 @@
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_en' %}
-      #primary-home.content-area
-        %main#main.site-main{:role => "main"}
-          %section.blog-news
-            .container
-              .row
-                #primary.content-area.col.col-2-of-3
-                  %main#main.site-main{:role => "main"}
-                    %article#post-728.post-728.page.type-page.status-publish.hentry
-                      %header.entry-header
-                        %h1.entry-title Om Product Data Lake
-                      / .entry-header
-                      .entry-content
-                        .pf-content
-                          %p Product Data Lake (PDL) er en fuldt udviklet cloud baseret IT-løsning til udveksling af produktdata imellem handelspartnere. PDL er ”drop box” lignende tjeneste, hvor 2 handelspartnere kan udveksle produktinformationer helt automatisk. PDL kan også binde handelspartneres ERP og PIM systemer sammen. Når en part ”up loader” data ”pushes” de automatisk ind i ”Product Data Lake” som så konverterer dem til at kunne pushes videre ind i samhandelspartnernes forskellige systemer. Hver enkelt partner har en unik profil, så det er kun de informationer som ”up loader´en” bestemmer hver enkelt partner skal have, som frigives.
-                          %p PDL er udviklet af specialister med den største viden og erfaring inden for Big Data og Master Data Magement systemer og med stor viden om den teknolog der kommer til styre fremtidens løsninger inden for udveksling af produktdata. Det gælder på tværs af brancher og lande.
-                          %p Product Data Lake drives af Henrik Engel, CEO og Henrik Liliendahl, CTO.
-                      / .entry-content
-                    / #post-##
-                  / #main
-                / #primary
-                #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
-                  .sidebar
-                    %aside#media_image-2.widget.widget_media_image
-                      %img.image.wp-image-1058.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/iStock-1046171366-260x250.jpg{% endeditable_file %}",:style => "max-width: 100%; height: auto;", :width => "300"}/
-                / #secondary
-              / .row
-            / .container
-          / .blog-news
-        / #main
-      / #primary
+      {% include 'header_da' %}
       #content.site-content
         .container
           .row
+            #primary.content-area.col.col-2-of-3
+              %main#main.site-main{:role => "main"}
+                %article#post-801.post-801.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-slider
+                  %header.entry-header
+                    %h1.entry-title Velkommen
+                  / .entry-header
+                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "1279", :sizes => "(max-width: 2500px) 100vw, 2500px", :src => "/images/iStock-908478148-slide.jpg", :width => "2500"}/
+                  .entry-content
+                  / .entry-content
+                / #post-##
+                %nav.navigation.post-navigation{:role => "navigation"}
+                  %h2.screen-reader-text Post navigation
+                  .nav-links
+                    .nav-next
+                      %a{:href => "/da/blog6", :rel => "next"} Lyntest Jeres virksomhed
+              / #main
+            / #primary
           / .row
         / .container
       / #content
       {% include 'foot' %}
     / #page
-    #cookie-law-info-bar
-      %span
-        This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.
-        %a#cookie_action_close_header.medium.cli-plugin-button.cli-plugin-main-button.cookie_action_close_header.cli_action_button{"data-cli_action" => "accept", :href => "#"} Accept
-        %a#CONSTANT_OPEN_URL.cli-plugin-main-link{:href => "/samples/Product-Data-Lake-Terms-of-Service-and-Privacy-Policy-201810.pdf", :target => "_blank"} Read More
-    #cookie-law-info-again
-      %span#cookie_hdr_showagain Privacy &amp; Cookies Policy
+    {% include 'cookie1' %}
+    {% include 'cookie2' %}
     .cli-modal-backdrop.cli-fade.cli-settings-overlay
     .cli-modal-backdrop.cli-fade.cli-popupbar-overlay
       /* ]]> */

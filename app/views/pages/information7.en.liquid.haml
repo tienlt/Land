@@ -1,0 +1,107 @@
+---
+title: Infomation7.en
+
+# true if the page is included in the menu
+listed: true
+
+# true if the page is published
+published: true
+
+# true if the page can be used as a layout for new pages created by the editors
+# is_layout: true
+
+# position among sibling pages
+# position: 1
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# other unique identifier of this page. To be used with the path_to liquid tag.
+# handle: my-page-handle
+
+# content type that this page is templatizing
+# content_type: "<slug of one of the content types>"
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+
+# Control the display of the page in the back-office.
+# display_settings:
+#   hidden: true          # hidden for authors?
+---
+!!!
+%html{:lang => "en-US"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "http://gmpg.org/xfn/11", :rel => "profile"}/
+    %title Product Data Lake - Let product data flow easily between trading partners
+    %link{:href => "//www.soerensen.fr", :rel => "dns-prefetch"}/
+    %link{:href => "//fonts.googleapis.com", :rel => "dns-prefetch"}/
+    %link{:href => "//s.w.org", :rel => "dns-prefetch"}/
+    {{ 'columns.css' | stylesheet_tag }}
+    {{ 'styles.css' | stylesheet_tag }}
+    {{ 'cookie-law-info-gdpr.css' | stylesheet_tag }}
+    {{ 'cookie-law-info-public.css' | stylesheet_tag }}
+    {{ 'meanmenu.css' | stylesheet_tag }}
+    {{ 'grid.css' | stylesheet_tag }}
+    {{ 'owl-carousel.css' | stylesheet_tag }}
+    {{ 'application.css' | stylesheet_tag }}
+    {{ 'responsive.css' | stylesheet_tag }}
+    %link#font-awesome-css{:href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %link#business-hub-fonts-css{:href => "https://fonts.googleapis.com/css?family=Exo+2%3A300%2C400%2C500%2C500i%2C600%2C700%2C900%7CRoboto%3A300%2C400%2C500%2C700%2C900&subset=latin%2Clatin-ext", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
+  %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
+    #page.site
+      {% include 'header_da' %}
+      #content.site-content
+        .container
+          .row
+            #primary.content-area.col.col-2-of-3
+              %main#main.site-main{:role => "main"}
+                %article#post-986.post-986.page.type-page.status-publish.has-post-thumbnail.hentry
+                  %header.entry-header
+                    %h1.entry-title Se vores film
+                  / .entry-header
+                  .entry-content
+                    .pf-content
+                      .wp-video{:style => "width: 640px;"}
+                        /[if lt IE 9] <script>document.createElement('video');</script>
+                        %video#video-986-1.wp-video-shortcode{:controls => "controls", :height => "360", :preload => "metadata", :width => "640"}
+                          %source{:src => "https://liliendahl.files.wordpress.com/2019/01/product-data-lake_video_fhd.mp4?_=1", :type => "video/mp4"}
+                          %a{:href => "https://liliendahl.files.wordpress.com/2019/01/product-data-lake_video_fhd.mp4"} https://liliendahl.files.wordpress.com/2019/01/product-data-lake_video_fhd.mp4
+                  / .entry-content
+                / #post-##
+              / #main
+            / #primary
+            #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
+              .sidebar
+                %aside#media_image-25.widget.widget_media_image
+                  %img.image.wp-image-1197.attachment-medium.size-medium{:alt => "", :height => "169", :sizes => "(max-width: 300px) 100vw, 300px", :src => "/images/Product-Data-Lake_Video_FHD_The-lake-300x169.jpg", :style => "max-width: 100%; height: auto;", :width => "300"}/
+            / #secondary
+          / .row
+        / .container
+      / #content
+      {% include 'foot' %}
+    / #page
+    {% include 'cookie1' %}
+    {% include 'cookie2' %}
+    .cli-modal-backdrop.cli-fade.cli-settings-overlay
+    .cli-modal-backdrop.cli-fade.cli-popupbar-overlay
+      /* ]]> */
+    :javascript
+      /* <![CDATA[ */
+      cli_cookiebar_settings='{"animate_speed_hide":"500","animate_speed_show":"500","background":"#FFF","border":"#b1a6a6c2","border_on":false,"button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":true,"button_1_new_win":false,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":true,"button_3_new_win":false,"button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#fff","button_4_as_button":true,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"reject_close_reload":false,"showagain_tab":true,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000","logging_on":false,"as_popup":false,"popup_overlay":true,"bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"}';
+      /* ]]> */
+    :javascript
+      /* <![CDATA[ */
+      var wpcf7 = {"apiSettings":{"root":"http:\/\/soerensen.fr\/psi\/UK\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+      /* ]]> */
+    {{ 'application.js' | javascript_tag }}
+    :javascript
+      /* <![CDATA[ */
+      var business_hub_script_vars = {"slideSpeed":"1000","autoplayTimeout":"1000"};
+      /* ]]> */
+    

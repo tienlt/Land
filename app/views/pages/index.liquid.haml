@@ -10,7 +10,6 @@
     %link{:href => "//s.w.org", :rel => "dns-prefetch"}/
     %link{:href => "http://soerensen.fr/psi/UK/feed/", :rel => "alternate", :title => "Product Data Lake » Feed", :type => "application/rss+xml"}/
     %link{:href => "http://soerensen.fr/psi/UK/comments/feed/", :rel => "alternate", :title => "Product Data Lake » Comments Feed", :type => "application/rss+xml"}/
-
     {{ 'columns.css' | stylesheet_tag }}
     {{ 'styles.css' | stylesheet_tag }}
     {{ 'cookie-law-info-gdpr.css' | stylesheet_tag }}
@@ -144,13 +143,8 @@
         / #site-generator
       / .site-footer
     / #page
-    #cookie-law-info-bar
-      %span
-        This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.
-        %a#cookie_action_close_header.medium.cli-plugin-button.cli-plugin-main-button.cookie_action_close_header.cli_action_button{"data-cli_action" => "accept", :href => "#"} Accept
-        %a#CONSTANT_OPEN_URL.cli-plugin-main-link{:href => "http://soerensen.fr/psi/UK", :target => "_blank"} Read More
-    #cookie-law-info-again
-      %span#cookie_hdr_showagain Privacy &amp; Cookies Policy
+    {% include 'cookie1' %}
+    {% include 'cookie2' %}
     .cli-modal-backdrop.cli-fade.cli-settings-overlay
     .cli-modal-backdrop.cli-fade.cli-popupbar-overlay
     :javascript

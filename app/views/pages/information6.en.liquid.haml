@@ -1,0 +1,175 @@
+---
+title: Infomation6.en
+
+# true if the page is included in the menu
+listed: true
+
+# true if the page is published
+published: true
+
+# true if the page can be used as a layout for new pages created by the editors
+# is_layout: true
+
+# position among sibling pages
+# position: 1
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# other unique identifier of this page. To be used with the path_to liquid tag.
+# handle: my-page-handle
+
+# content type that this page is templatizing
+# content_type: "<slug of one of the content types>"
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+
+# Control the display of the page in the back-office.
+# display_settings:
+#   hidden: true          # hidden for authors?
+---
+!!!
+%html{:lang => "en-US"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "http://gmpg.org/xfn/11", :rel => "profile"}/
+    %title Product Data Lake - Let product data flow easily between trading partners
+    %link{:href => "//www.soerensen.fr", :rel => "dns-prefetch"}/
+    %link{:href => "//fonts.googleapis.com", :rel => "dns-prefetch"}/
+    %link{:href => "//s.w.org", :rel => "dns-prefetch"}/
+    {{ 'columns.css' | stylesheet_tag }}
+    {{ 'styles.css' | stylesheet_tag }}
+    {{ 'cookie-law-info-gdpr.css' | stylesheet_tag }}
+    {{ 'cookie-law-info-public.css' | stylesheet_tag }}
+    {{ 'meanmenu.css' | stylesheet_tag }}
+    {{ 'grid.css' | stylesheet_tag }}
+    {{ 'owl-carousel.css' | stylesheet_tag }}
+    {{ 'application.css' | stylesheet_tag }}
+    {{ 'responsive.css' | stylesheet_tag }}
+    %link#font-awesome-css{:href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %link#business-hub-fonts-css{:href => "https://fonts.googleapis.com/css?family=Exo+2%3A300%2C400%2C500%2C500i%2C600%2C700%2C900%7CRoboto%3A300%2C400%2C500%2C700%2C900&subset=latin%2Clatin-ext", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
+  %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
+    #page.site
+      {% include 'header_da' %}
+      #content.site-content
+        .container
+          .row
+            #primary.content-area.col.col-2-of-3
+              %main#main.site-main{:role => "main"}
+                %article#post-984.post-984.page.type-page.status-publish.hentry
+                  %header.entry-header
+                    %h1.entry-title Q &amp; A
+                  / .entry-header
+                  .entry-content
+                    .pf-content
+                      %p
+                        %strong Her er ofte stillede spørgsmål og svar om Product Data Lake (PDL).
+                      %p
+                        Spørgsmål 1- 6 er af almen karakter.
+                        %br/
+                        Spørgsmål 7- 9 er specielt for dem der har behov for at afgive data til samhandelspartnere, typisk producenter og forhandlere.
+                        %br/
+                        Spørgsmål 10 – 12 er specielt for dem der har behov for at modtage data fra samhandelspartnere, typisk detailledet og webshops.
+                      %p
+                        %strong
+                          %u Generelt
+                      %p
+                        %strong 1) Hvordan funger PDL?
+                        %br/
+                        PDL er en cloud-baseret løsning, som alle kan tilgå med en webbrowser. Så snart du har fået dit login, er du online med alle dine kunder, forudsat de også har en login og at I har accepteret jeres partnerskab. Det fungerer faktisk ligesom på et socialt netværk.
+                      %p Den daglige udveksling af produktinformationer kan sættes op til at ske automatisk via FTP filudveksling eller APIer som program-til-program udveksling. Du vælger selv din udvekslingsform, og dine samhandelspartnere vælger selv deres udvekslingsform.
+                      %p
+                        %strong 2) Hvad koster det at bruge PDL?
+                        %br/
+                        PDL er 100% skalerbart. Du betaler kun for den mængde data, du sender og modtager igennem systemet. Typisk koster det fra 1 – 3 kroner pr. produktnummer pr. år afhængig af antallet af produkter, filer, samhandelspartnere og brugere.
+                      %p
+                        %strong 3) Er PDL det samme som et PIM (Product Information Management) system?
+                        %br/
+                        Nej. PDL er et system der automatisk udveksler produktdata imellem samhandelspartnere. Et PIM- system er et in-house system, der holder styr på egne produktdata, og som i de færreste tilfælde er koblet sammen med andre samhandelspartneres systemer.
+                      %p
+                        %strong 4) Man hører så meget om cloud løsninger. Hvorfor er det så smart?
+                        %br/
+                        Mange virksomheder står med mange af de samme udfordringer til administration, salg, økonomistyring, etc. I stedet for at hver enkelt opbygger egne systemer, som koster uforholdsmæssigt mange penge, så er det billigt og fleksibelt at trække på et system, der allerede er udviklet og velfungerende. Og så betaler man typisk kun for det omfang, man trækker på systemet, og der er ikke nogen grænse for, hvor mange data og hvor mange brugere der kan kobles op.
+                      %p
+                        %strong 5) Er det ikke usikkert at mine data ligger i en Cloud?
+                        %br/
+                        Alt kan hackes. Både cloud-systemer og egne systemer. Det ene er ikke mere usikkert end det andet. Men der er mindre risiko for, at en cloud-baseret tjeneste hackes, da sikkerheden er højt prioriteret på grund af de mange brugere. Formentlig er sikkerheden højere end for de fleste in-house systemer.
+                      %p
+                        %strong 6) Hvad er forskellen på en ”Cloud” og en ”Lake”?
+                        %br/
+                        En sky og en sø er ikke det samme, men i relation til IT er der fællestræk. Data og systemer ligger uden for virksomheden og tilgås via nettet. Men en ”cloud” er ofte udtryk for, at man har adgang til et program, mens en ”lake” ofte er udtryk for opbevaring af store mængder data.
+                        %br/
+                        Derfor er PDL en cloud-løsning med adgang til de store mængder produktdata, som ligger i ”lake´en”
+                      %p
+                        %strong
+                          %u Afgivelse af produktinformationer
+                      %p
+                        %strong 7) Hvorfor er det smartere at bruge Product Data Lake (PDL) end at sende et dokument eller en fil med produktoplysninger til mine kunder?
+                        %br/
+                        Når du en gang har lagt dine produktinformationer ind i PDL, kan alle dine kunder koble sig op og få dine informationer, akkurat som de ønsker. Nogle vil gerne selv taste data ind i eget system, mens andre gerne vil have dem ”push´et” automatisk ind i eget system. Uanset ønsker og hvilke systemer dine kunder bruger, tilpasser PDL dine data til hver enkelt kundes ønsker og behov. Du og dine kunder sparer en masse tid og arbejdskraft ved at bruge PDL, og der er minimal risiko for fejl, da der ikke sker manuel bearbejdning af data.
+                      %p
+                        %strong 8) Jeg overvejer at opbygge mit eget PIM (Product Information Management) system, så mine kunder selv kan downloade fra min kundeportal. Det er vel det samme som at bruge PDL?
+                        %br/
+                        Nej. Et PIM-system er et in-house system. Det snakker sjældent sammen med dine samhandelspartneres systemer. Så selvom det er det samme arbejde for dig at lægge dine produktinformationer ind i PDL og et PIM system, er det et stort arbejde for dine kunder at skulle downloade og konvertere data fra dit PIM-system via din kundeportal ind i deres egne systemer. Hvis du bruger PDL, kan dine data automatisk pushes ind i dine kunders systemer uden menneskelig indblanding.
+                      %p Og så er der lige det med omkostningerne. Et PIM-system kan nemt koste på den forkerte side af en million at installere samt rigtig mange interne ressourcer. En PDL-løsning kan du koble dig på med det samme, og du betaler kun efter forbrug (typisk fra kr. 1 – 3 pr. produkt pr. år).
+                      %p
+                        %strong 9) Jeg har allerede et PIM (Product Information Management) system, som fungerer fint, og som mine medarbejdere er trygge ved. Så er det vel ikke aktuelt at tale om en PDL-løsning lige nu?
+                        %br/
+                        Det er godt, hvis du har et velfungerede PIM-system, som alle er trygge ved. Men det kobler dig imidlertid ikke sammen med dine kunder. Kunderne skal stadig bruge meget tid og mange penge på at hente data ned fra mange forskellige portaler, konvertere data og lægge dem ind i egne systemer. Men PDL kan lægges ”oven” på dit PIM-system, så dine medarbejdere kan fortsætte med at bruge PIM- systemet, og så trækker PDL automatisk de data, du ønsker, fra dit PIM-system og skubber dem ud i det omfang og det format, som dine kunder har defineret i PDL. Så jo, det styrker absolut handlen med dine kunder, at I bliver koblet sammen omkring udveksling af produktdata.
+                      %p
+                        %strong
+                          %u Modtagelse af produktinformationer
+                      %p
+                        %strong 10) Vi har en leverandørportal, hvor vores samhandelspartnere kan uploade deres informationer. Det fungerer fint for os. Så er der vel ingen grund til også at skulle bruge PDL?
+                        %br/
+                        Hvis I er ”storebror” i samhandlen med jeres leverandører, er det jo fint, hvis man kan få alle til at lægge deres data op hver især. Men tænk på det store arbejde det er for jeres leverandører at skulle lægge data op til hver eneste samhandelspartner. Og tænk på risikoen for fejl og på at jeres leverandører ikke får opdateret data i tide på grund af det store arbejde. Så vil det være smart hvis I blot lod PDL overføre jeres leverandørers data via jeres portal.
+                      %p Og måske støder I en dag på en leverandør, som er så stor, at det er ham, der er ”storebror”, og derfor vil bestemme hvordan han afleverer sine data til jer. Så ville en PDL-løsning med det samme gøre det nemt for både leverandør og forhandler.
+                      %p
+                        %strong 11) Vi modtager data på alle mulige måder i dag. Det er et kæmpe arbejde for os at håndtere det. Men hvordan løser vi det?
+                        %br/
+                        I kobler jer op på PDL. I fortæller jeres leverandører, at I fremover ønsker, at de indberetter deres data til jer via PDL. Det er det samme arbejde for dem. I modtager så helt automatisk ensrettede og opdaterede data direkte i jeres system. I sparer tid og penge og undgår fejl, og jeres leverandører opdager, at de nu kun behøver at uploade deres data ét sted, hvorfra dataene kan sendes til alle deres kunder. De opnår således de samme besparelser og fordele som jer.
+                      %p Vi hjælper gerne med at også at få jeres leverandører koblet på.
+                      %p
+                        %strong 12) Mange af vores leverandører har deres egne portaler, som vi skal ind på for at hente data. Kan det ikke gøres smartere?
+                        %br/
+                        Jo. I kobler jer op på PDL og beder om, at jeres leverandørerer også kobler deres portaler på. Så sker der en automatisk overførsel af produktdata fra jeres leverandører til jer. Der er i jeres leverandørers interesse at I altid er opdateret med deres produktinformationer, så de vil lytte til jeres ønsker.
+                  / .entry-content
+                / #post-##
+              / #main
+            / #primary
+            #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
+              .sidebar
+                %aside#media_image-9.widget.widget_media_image
+                  %img.image.wp-image-1093.attachment-medium.size-medium{:alt => "", :height => "250", :sizes => "(max-width: 300px) 100vw, 300px", :src => "/images/iStock-1046171344-1-300x250.jpg",:style => "max-width: 100%; height: auto;", :width => "300"}/
+                %aside#media_image-10.widget.widget_media_image
+                  %img.image.wp-image-1094.attachment-medium.size-medium{:alt => "", :height => "182", :sizes => "(max-width: 300px) 100vw, 300px", :src => "/images/iStock-622427386-300x182.jpg", :style => "max-width: 100%; height: auto;", :width => "300"}/
+            / #secondary
+          / .row
+        / .container
+      / #content
+      {% include 'foot' %}
+    / #page
+    {% include 'cookie1' %}
+    {% include 'cookie2' %}
+    .cli-modal-backdrop.cli-fade.cli-settings-overlay
+    .cli-modal-backdrop.cli-fade.cli-popupbar-overlay
+      /* ]]> */
+    :javascript
+      /* <![CDATA[ */
+      cli_cookiebar_settings='{"animate_speed_hide":"500","animate_speed_show":"500","background":"#FFF","border":"#b1a6a6c2","border_on":false,"button_1_button_colour":"#000","button_1_button_hover":"#000000","button_1_link_colour":"#fff","button_1_as_button":true,"button_1_new_win":false,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":true,"button_3_new_win":false,"button_4_button_colour":"#000","button_4_button_hover":"#000000","button_4_link_colour":"#fff","button_4_as_button":true,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"reject_close_reload":false,"showagain_tab":true,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#000","show_once_yn":false,"show_once":"10000","logging_on":false,"as_popup":false,"popup_overlay":true,"bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"}';
+      /* ]]> */
+    :javascript
+      /* <![CDATA[ */
+      var wpcf7 = {"apiSettings":{"root":"http:\/\/soerensen.fr\/psi\/UK\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+      /* ]]> */
+    {{ 'application.js' | javascript_tag }}
+    :javascript
+      /* <![CDATA[ */
+      var business_hub_script_vars = {"slideSpeed":"1000","autoplayTimeout":"1000"};
+      /* ]]> */
+    
