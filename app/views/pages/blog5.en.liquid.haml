@@ -61,34 +61,23 @@ published: true
           .row
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
-                %article#post-861.post-861.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
+                %article#post-35.post-35.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-slider
                   %header.entry-header
-                    %h1.entry-title Bliv Ambassadør for Product Data Lake
+                    %h1.entry-title Welcome
                   / .entry-header
-                  / %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "4912", :sizes => "(max-width: 7360px) 100vw, 7360px", :src => "/images/iStock-912944158.jpg", :width => "7360"}/
+                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "1279", :sizes => "(max-width: 2500px) 100vw, 2500px", :src => "{% editable_file Gepard %}/samples/pages/iStock-908478148-slide.jpg{% endeditable_file %}", :width => "2500"}/
                   .entry-content
-                    .pf-content
-                      %p Synes du at Product Data Lakes syn på den fremtidige måde at dele produktdata på er lige så spændende som vi gør, så blev en del af vores team. Vi ønsker at tilknytte ambassadører, der kan bidrage og spare med os om den fortsatte udvikling samt tilknytte virksomheder, der ønsker at bruge systemet.
-                      %p
-                        Her finder du mere information om vores ambassadørkoncept:
-                        = succeed "." do
-                          %a{:href => "/images/Product-Data-Lake-Ambassador-1.8.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Ambassador
                   / .entry-content
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-previous
-                      %a{:href => "/da/blog6", :rel => "prev"} Lyntest Jeres virksomhed
+                      %a{:href => "/en/blog6", :rel => "prev"} The Long Tail of Product Data Synchronization
                     .nav-next
-                      %a{:href => "/da/blog4", :rel => "next"} Hvad kan vi?
+                      %a{:href => "/en/blog4", :rel => "next"} Stay Up to Date with the Latest News
               / #main
             / #primary
-            #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
-              .sidebar
-                %aside#media_image-21.widget.widget_media_image
-                  %img.image.wp-image-1115.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "/images/BadgeMedium-300x300.png", :style => "max-width: 100%; height: auto;", :width => "300"}/
-            / #secondary
           / .row
         / .container
       / #content

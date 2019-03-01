@@ -55,32 +55,31 @@ published: true
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_da' %}
+      {% include 'header_en' %}
       #content.site-content
         .container
           .row
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
-                %article#post-752.post-752.page.type-page.status-publish.has-post-thumbnail.hentry
+                %article#post-109.post-109.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Bliv ambassadør for Product Data Lake
+                    %h1.entry-title Become Ambassador to PDL
                   / .entry-header
                   .entry-content
-                    .pf-content
-                      %p Synes du at Product Data Lakes syn på den fremtidige måde at dele produktdata på er lige så spændende som vi gør, så blev en del af vores team. Vi ønsker at tilknytte ambassadører, der kan bidrage og spare med os om den fortsatte udvikling samt tilknytte virksomheder, der ønsker at bruge systemet.
-                      %p
-                        Her finder du mere information om vores ambassadørkoncept:
-                        = succeed "." do
-                          %a{:href => "/images/Product-Data-Lake-Ambassador-1.8.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Ambassador
-                      %p  
+                    %p Do you think the future way of sharing product data is just as exciting as we do, then become part of our team. We wish to work with ambassadors who can contribute and share knowledge on the subject and make companies use our platform and guide them…
+                    %p
+                      Read more here:
+                      = succeed "." do
+                        %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Ambassador-1.8.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Ambassador
+                    %p  
                   / .entry-content
                 / #post-##
               / #main
             / #primary
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
-                %aside#media_image-21.widget.widget_media_image
-                  %img.image.wp-image-1115.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "/images/BadgeMedium-300x300.png", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                %aside#media_image-8.widget.widget_media_image
+                  %img.image.wp-image-22.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/BadgeMedium-300x300.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
             / #secondary
           / .row
         / .container

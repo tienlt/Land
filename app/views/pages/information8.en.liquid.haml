@@ -55,51 +55,55 @@ published: true
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_da' %}
+      {% include 'header_en' %}
       #content.site-content
         .container
           .row
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
-                %article#post-1013.post-1013.page.type-page.status-publish.hentry
+                %article#post-119.post-119.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Kontakt os
+                    %h1.entry-title Contact
                   / .entry-header
                   .entry-content
-                    .pf-content
-                      #wpcf7-f18-p1013-o1.wpcf7{:dir => "ltr", :lang => "en-US", :role => "form"}
-                        .screen-reader-response
-                        %form.wpcf7-form{:action => "/psi/wordpress/?page_id=1013#wpcf7-f18-p1013-o1", :method => "post", :novalidate => "novalidate"}
-                          %div{:style => "display: none;"}
-                            %input{:name => "_wpcf7", :type => "hidden", :value => "18"}/
-                            %input{:name => "_wpcf7_version", :type => "hidden", :value => "5.1"}/
-                            %input{:name => "_wpcf7_locale", :type => "hidden", :value => "en_US"}/
-                            %input{:name => "_wpcf7_unit_tag", :type => "hidden", :value => "wpcf7-f18-p1013-o1"}/
-                            %input{:name => "_wpcf7_container_post", :type => "hidden", :value => "1013"}/
-                            %input{:name => "g-recaptcha-response", :type => "hidden", :value => ""}/
-                          %p
-                            Navn (skal oplyses)
+                    %p Get in contact here:
+                    #wpcf7-f34-p119-o1.wpcf7{:dir => "ltr", :lang => "da-DK", :role => "form"}
+                      .screen-reader-response
+                      %form.wpcf7-form{:action => "/psi/UK/information/contact/#wpcf7-f34-p119-o1", :method => "post", :novalidate => "novalidate"}
+                        %div{:style => "display: none;"}
+                          %input{:name => "_wpcf7", :type => "hidden", :value => "34"}/
+                          %input{:name => "_wpcf7_version", :type => "hidden", :value => "5.1.1"}/
+                          %input{:name => "_wpcf7_locale", :type => "hidden", :value => "da_DK"}/
+                          %input{:name => "_wpcf7_unit_tag", :type => "hidden", :value => "wpcf7-f34-p119-o1"}/
+                          %input{:name => "_wpcf7_container_post", :type => "hidden", :value => "119"}/
+                          %input{:name => "g-recaptcha-response", :type => "hidden", :value => ""}/
+                        %p
+                          %label
+                            Your name (mandatory)
                             %br/
                             %span.wpcf7-form-control-wrap.your-name
                               %input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{"aria-invalid" => "false", "aria-required" => "true", :name => "your-name", :size => "40", :type => "text", :value => ""}/
-                          %p
-                            E-mail adresse (skal oplyses)
+                        %p
+                          %label
+                            Your email (mandatory)
                             %br/
                             %span.wpcf7-form-control-wrap.your-email
                               %input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email{"aria-invalid" => "false", "aria-required" => "true", :name => "your-email", :size => "40", :type => "email", :value => ""}/
-                          %p
-                            Telefonnummer
+                        %p
+                          %label
+                            Subject
                             %br/
-                            %span.wpcf7-form-control-wrap.tel-683
-                              %input.wpcf7-form-control.wpcf7-text.wpcf7-tel.wpcf7-validates-as-tel{"aria-invalid" => "false", :name => "tel-683", :size => "40", :type => "tel", :value => ""}/
-                          %p
-                            Besked
+                            %span.wpcf7-form-control-wrap.your-subject
+                              %input.wpcf7-form-control.wpcf7-text{"aria-invalid" => "false", :name => "your-subject", :size => "40", :type => "text", :value => ""}/
+                        %p
+                          %label
+                            Your message
                             %br/
                             %span.wpcf7-form-control-wrap.your-message
                               %textarea.wpcf7-form-control.wpcf7-textarea{"aria-invalid" => "false", :cols => "40", :name => "your-message", :rows => "10"}
-                          %p
-                            %input.wpcf7-form-control.wpcf7-submit{:type => "submit", :value => "Send"}/
-                          .wpcf7-response-output.wpcf7-display-none
+                        %p
+                          %input.wpcf7-form-control.wpcf7-submit{:type => "submit", :value => "Submit"}/
+                        .wpcf7-response-output.wpcf7-display-none
                   / .entry-content
                 / #post-##
               / #main

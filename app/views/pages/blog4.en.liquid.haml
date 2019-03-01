@@ -55,32 +55,39 @@ published: true
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_da' %}
+      {% include 'header_en' %}
       #content.site-content
         .container
           .row
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
-                %article#post-864.post-864.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-hvad-kan-vi
+                %article#post-136.post-136.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
                   %header.entry-header
-                    %h1.entry-title Hvad kan vi?
+                    %h1.entry-title Stay Up to Date with the Latest News
                   / .entry-header
-                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "1600", :sizes => "(max-width: 2133px) 100vw, 2133px", :src => "/images/PDL_How_it_works-1.png", :width => "2133"}/
+                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "3000", :sizes => "(max-width: 3000px) 100vw, 3000px", :src => "{% editable_file Gepard %}/samples/pages/iStock-1046171366.jpg{% endeditable_file %}", :width => "3000"}/
                   .entry-content
-                    .pf-content
-                      %p Udveksling af fyldestgørende og opdaterede produktinformationer imellem handelspartnere (producenter, grossister, forhandlere, detailbutikker og e-shops) er afgørende for at alle led opnår den højeste omsætning.
-                      %p Men stort set ingen af de eksisterende IT-løsninger som anvendes i dag, sikrer, at alle led får produktinformationerne til tiden, opdaterede, fyldestgørende, fejlfrie og omkostningseffektivt.
-                      %p Den nye IT-løsning som kan sikre at disse afgørende parametre opfyldes hedder: Product Data Lake. En simpel og billig cloud løsning som kan anvendes i alle brancher og som kan kobles på alle gængse ERP og PIM (product information management) systemer.
-                      %p Med få klik kan du se hvad din virksomhed kan opnå ved at bruge en Product Data Lake løsning
+                    %p
+                      Do you wish to be kept a jour with the latest news when it comes Big data, Product Data Management og Product Information Management, then please sign up here
+                      = succeed ". Then we send you an e-mail when exciting news, trends and new solutions show up." do
+                        %a{:href => "/en/kontaktos"} her
+                    %p
+                      Sign up for newsletter
+                      %br/
+                      Follow Product Data Lake on
+                      %a{:href => "https://www.linkedin.com/company/product-data-lake/", :rel => "noopener", :target => "_blank"} Linkedin
+                      %br/
+                      Follow Product Data Lake on
+                      %a{:href => "https://twitter.com/ProductDataLake", :rel => "noopener", :target => "_blank"} Twitter
                   / .entry-content
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-previous
-                      %a{:href => "/da/blog5", :rel => "prev"} Bliv Ambassadør for Product Data Lake
+                      %a{:href => "/en/blog5", :rel => "prev"} Welcome
                     .nav-next
-                      %a{:href => "/da/blog3", :rel => "next"} Gratis prøveperiode
+                      %a{:href => "/en/blog3", :rel => "next"} Free Trial
               / #main
             / #primary
           / .row

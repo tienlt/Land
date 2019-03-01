@@ -55,32 +55,36 @@ published: true
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_da' %}
+      {% include 'header_en' %}
       #content.site-content
         .container
           .row
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
-                %article#post-986.post-986.page.type-page.status-publish.has-post-thumbnail.hentry
+                %article#post-115.post-115.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Se vores film
+                    %h1.entry-title Stay updated
                   / .entry-header
                   .entry-content
-                    .pf-content
-                      .wp-video{:style => "width: 640px;"}
-                        /[if lt IE 9] <script>document.createElement('video');</script>
-                        %video#video-986-1.wp-video-shortcode{:controls => "controls", :height => "360", :preload => "metadata", :width => "640"}
-                          %source{:src => "https://liliendahl.files.wordpress.com/2019/01/product-data-lake_video_fhd.mp4?_=1", :type => "video/mp4"}
-                          %a{:href => "https://liliendahl.files.wordpress.com/2019/01/product-data-lake_video_fhd.mp4"} https://liliendahl.files.wordpress.com/2019/01/product-data-lake_video_fhd.mp4
+                    %p
+                      Do you wish to be kept a jour with the latest news when it comes Big data, Product Data Management og Product Information Management, then please sign up here
+                      = succeed ". Then we send you an e-mail when exciting news, trends and new solutions show up." do
+                        %a{:href => "/en/kontaktos"} her
+                    %p
+                      %a{:href => "/en/information8"}
+                        %em Send mail with news-updates
+                      %br/
+                      %em Follow Product Data Lake on
+                      %a{:href => "https://www.linkedin.com/company/product-data-lake/", :rel => "noopener", :target => "_blank"}
+                        %em Linkedin
+                      %br/
+                      %em Follow Product Data Lake on
+                      %a{:href => "https://twitter.com/ProductDataLake", :rel => "noopener", :target => "_blank"}
+                        %em Twitter
                   / .entry-content
                 / #post-##
               / #main
             / #primary
-            #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
-              .sidebar
-                %aside#media_image-25.widget.widget_media_image
-                  %img.image.wp-image-1197.attachment-medium.size-medium{:alt => "", :height => "169", :sizes => "(max-width: 300px) 100vw, 300px", :src => "/images/Product-Data-Lake_Video_FHD_The-lake-300x169.jpg", :style => "max-width: 100%; height: auto;", :width => "300"}/
-            / #secondary
           / .row
         / .container
       / #content

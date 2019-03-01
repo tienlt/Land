@@ -55,7 +55,7 @@ published: true
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_da' %}
+      {% include 'header_en' %}
       #content.site-content
         .container
           .row
@@ -63,39 +63,223 @@ published: true
               %main#main.site-main{:role => "main"}
                 %header
                   %h1.page-title.screen-reader-text Blog
-                %article#post-1144.post-category-wrapper.post-1144.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-blog
+                %article#post-142.post-category-wrapper.post-142.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
                   .row
                     .col.col-1-of-3
-                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/EDI-GDSN-PDL-260x250.png", :width => "260"}/
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/Gepard-260x250.jpg{% endeditable_file %}", :width => "260"}/
                     / .col
                     .col.col-2-of-3
                       %header.entry-header
                         %h3.entry-title
-                          %a{:href => "/da/blog1", :rel => "bookmark"} The Long Tail of Product Data Synchronization
+                          %a{:href => "/en/blog1", :rel => "bookmark"} Flashtest Your Business
                         .post-details
                           %span.posted-on
                             Posted on
                             %i.fa.fa-calendar-o
-                            %a{:href => "/da/blog1", :rel => "bookmark"}
+                            %a{:href => "/en/blog1", :rel => "bookmark"}
                               %time.entry-date.published{:datetime => ""}
                               %time.updated{:datetime => ""}
                           %span.byline
                             by
                             %span.author.vcard
                               %i.fa.fa-user
-                              %a.url.fn.n{:href => "http://www.soerensen.fr/psi/wordpress/?author=1"}
+                              %a.url.fn.n{:href => "http://soerensen.fr/psi/UK/author/pdl-admin/"}
                           %span.cat-links
                             %i.fa.fa-folder-open-o
                             Posted in
-                            %a{:href => "http://www.soerensen.fr/psi/wordpress/?cat=24", :rel => "category"} Blog
+                            %a{:href => "/en/omos", :rel => "category tag"} Om os
+                        / .entry-meta
+                      / .entry-header
+                      .entry-content
+                        %p
+                        %p Test if your company exchange data with the speed of a gepard or a snail powered by Typeform
+                      / .entry-content
+                      %a.btn-business{:href => "/en/blog1"}
+                        Read More
+                        %i.fa.fa-angle-right
+                    / .col
+                  / .row
+                / #post-##
+                %article#post-140.post-category-wrapper.post-140.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
+                  .row
+                    .col.col-1-of-3
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/iStock-912944158-260x250.jpg{% endeditable_file %}", :width => "260"}/
+                    / .col
+                    .col.col-2-of-3
+                      %header.entry-header
+                        %h3.entry-title
+                          %a{:href => "/en/blog2", :rel => "bookmark"} Become Ambassador to Product Data Lake
+                        .post-details
+                          %span.posted-on
+                            Posted on
+                            %i.fa.fa-calendar-o
+                            %a{:href => "/en/blog2", :rel => "bookmark"}
+                              %time.entry-date.published{:datetime => ""}
+                              %time.updated{:datetime => ""}
+                          %span.byline
+                            by
+                            %span.author.vcard
+                              %i.fa.fa-user
+                              %a.url.fn.n{:href => "http://soerensen.fr/psi/UK/author/pdl-admin/"}
+                          %span.cat-links
+                            %i.fa.fa-folder-open-o
+                            Posted in
+                            %a{:href => "/en/omos", :rel => "category tag"} Om os
+                        / .entry-meta
+                      / .entry-header
+                      .entry-content
+                        %p
+                        %p Do you think the future way of sharing product data is just as exciting as we do, then become part of our team. We wish to work with ambassadors who can contribute and share knowledge on the subject and make […]
+                      / .entry-content
+                      %a.btn-business{:href => "/en/blog2"}
+                        Read More
+                        %i.fa.fa-angle-right
+                    / .col
+                  / .row
+                / #post-##
+                %article#post-138.post-category-wrapper.post-138.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
+                  .row
+                    .col.col-1-of-3
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/iStock-873806068-260x250.jpg{% endeditable_file %}", :width => "260"}/
+                    / .col
+                    .col.col-2-of-3
+                      %header.entry-header
+                        %h3.entry-title
+                          %a{:href => "/en/blog3", :rel => "bookmark"} Free Trial
+                        .post-details
+                          %span.posted-on
+                            Posted on
+                            %i.fa.fa-calendar-o
+                            %a{:href => "/en/blog3", :rel => "bookmark"}
+                              %time.entry-date.published{:datetime => ""}
+                              %time.updated{:datetime => ""}
+                          %span.byline
+                            by
+                            %span.author.vcard
+                              %i.fa.fa-user
+                              %a.url.fn.n{:href => "http://soerensen.fr/psi/UK/author/pdl-admin/"}
+                          %span.cat-links
+                            %i.fa.fa-folder-open-o
+                            Posted in
+                            %a{:href => "/en/omos", :rel => "category tag"} Om os
+                        / .entry-meta
+                      / .entry-header
+                      .entry-content
+                        %p
+                        %p Log on and test our system. You get 2 month for free and we help you to get started. Send us and e-mail if you need help.
+                      / .entry-content
+                      %a.btn-business{:href => "/en/blog3"}
+                        Read More
+                        %i.fa.fa-angle-right
+                    / .col
+                  / .row
+                / #post-##
+                %article#post-136.post-category-wrapper.post-136.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
+                  .row
+                    .col.col-1-of-3
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/iStock-1046171366-260x250.jpg{% endeditable_file %}", :width => "260"}/
+                    / .col
+                    .col.col-2-of-3
+                      %header.entry-header
+                        %h3.entry-title
+                          %a{:href => "/en/blog4", :rel => "bookmark"} Stay Up to Date with the Latest News
+                        .post-details
+                          %span.posted-on
+                            Posted on
+                            %i.fa.fa-calendar-o
+                            %a{:href => "/en/blog4", :rel => "bookmark"}
+                              %time.entry-date.published{:datetime => ""}
+                              %time.updated{:datetime => ""}
+                          %span.byline
+                            by
+                            %span.author.vcard
+                              %i.fa.fa-user
+                              %a.url.fn.n{:href => "http://soerensen.fr/psi/UK/author/pdl-admin/"}
+                          %span.cat-links
+                            %i.fa.fa-folder-open-o
+                            Posted in
+                            %a{:href => "/en/omos", :rel => "category tag"} Om os
+                        / .entry-meta
+                      / .entry-header
+                      .entry-content
+                        %p
+                        %p Do you wish to be kept a jour with the latest news when it comes Big data, Product Data Management og Product Information Management, then please sign up here her. Then we send you an e-mail when exciting news, trends […]
+                      / .entry-content
+                      %a.btn-business{:href => "/en/blog4"}
+                        Read More
+                        %i.fa.fa-angle-right
+                    / .col
+                  / .row
+                / #post-##
+                %article#post-35.post-category-wrapper.post-35.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-slider
+                  .row
+                    .col.col-1-of-3
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/iStock-908478148-slide.jpg{% endeditable_file %}", :width => "260"}/
+                    / .col
+                    .col.col-2-of-3
+                      %header.entry-header
+                        %h3.entry-title
+                          %a{:href => "/en/blog5", :rel => "bookmark"} Welcome
+                        .post-details
+                          %span.posted-on
+                            Posted on
+                            %i.fa.fa-calendar-o
+                            %a{:href => "http://soerensen.fr/psi/UK/2019/01/21/welcome/", :rel => "bookmark"}
+                              %time.entry-date.published{:datetime => ""}
+                              %time.updated{:datetime => ""}
+                          %span.byline
+                            by
+                            %span.author.vcard
+                              %i.fa.fa-user
+                              %a.url.fn.n{:href => "http://soerensen.fr/psi/UK/author/pdl-admin/"}
+                          %span.cat-links
+                            %i.fa.fa-folder-open-o
+                            Posted in
+                            %a{:href => "/en/omos", :rel => "category tag"} Slider
+                        / .entry-meta
+                      / .entry-header
+                      .entry-content
+                        %p
+                      / .entry-content
+                      %a.btn-business{:href => "/en/blog5"}
+                        Read More
+                        %i.fa.fa-angle-right
+                    / .col
+                  / .row
+                / #post-##
+                %article#post-19.post-category-wrapper.post-19.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-blog
+                  .row
+                    .col.col-1-of-3
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/edi-gdsn-pdl1.png{% endeditable_file %}", :width => "260"}/
+                    / .col
+                    .col.col-2-of-3
+                      %header.entry-header
+                        %h3.entry-title
+                          %a{:href => "/en/blog6", :rel => "bookmark"} The Long Tail of Product Data Synchronization
+                        .post-details
+                          %span.posted-on
+                            Posted on
+                            %i.fa.fa-calendar-o
+                            %a{:href => "/en/blog6", :rel => "bookmark"}
+                              %time.entry-date.published{:datetime => ""}
+                              %time.updated{:datetime => ""}
+                          %span.byline
+                            by
+                            %span.author.vcard
+                              %i.fa.fa-user
+                              %a.url.fn.n{:href => "http://soerensen.fr/psi/UK/author/pdl-admin/"}
+                          %span.cat-links
+                            %i.fa.fa-folder-open-o
+                            Posted in
+                            %a{:href => "/en/omos/", :rel => "category tag"} Blog
                         / .entry-meta
                       / .entry-header
                       .entry-content
                         %p
                         %p When discussing with peers and interested parties about Product Data Lake, some of the alternatives are often brought up. These are EDI and GDSN. So, what is the difference between those services and Product Data Lake. Electronic Data Interchange (EDI) is the […]
                       / .entry-content
-                      %a.btn-business{:href => "/da/blog1"}
-                        Læs mere
+                      %a.btn-business{:href => "/en/blog6"}
+                        Read More
                         %i.fa.fa-angle-right
                     / .col
                   / .row

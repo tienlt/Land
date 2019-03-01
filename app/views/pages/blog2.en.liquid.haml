@@ -55,40 +55,32 @@ published: true
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_da' %}
+      {% include 'header_en' %}
       #content.site-content
         .container
           .row
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
-                %article#post-895.post-895.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
+                %article#post-140.post-140.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
                   %header.entry-header
-                    %h1.entry-title Hold dig ajour med den seneste udvikling
+                    %h1.entry-title Become Ambassador to Product Data Lake
                   / .entry-header
-                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "3000", :sizes => "(max-width: 3000px) 100vw, 3000px", :src => "/images/iStock-1046171366.jpg", :width => "3000"}/
+                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "4912", :sizes => "(max-width: 7360px) 100vw, 7360px", :src => "{% editable_file Gepard %}/samples/pages/iStock-912944158.jpg{% endeditable_file %}", :width => "7360"}/
                   .entry-content
-                    .pf-content
-                      %p
-                        Ønsker du at holde dig a jour med hvad der sker inden for Big data, Product Data Management og Product Information Management, så tilmeld dig
-                        = succeed ". Så mailer vi når der er nye trends, nye løsninger eller andre spændende nyheder på vej." do
-                          %a{:href => "/da/kontaktos"} her
-                      %p
-                        Tilmeld dig nyhedsbrev
-                        %br/
-                        Følg Product Data Lake på
-                        %a{:href => "https://www.linkedin.com/company/product-data-lake/", :rel => "noopener", :target => "_blank"} Linkedin
-                        %br/
-                        Følg Product Data Lake på
-                        %a{:href => "https://twitter.com/ProductDataLake", :rel => "noopener", :target => "_blank"} Twitter
+                    %p Do you think the future way of sharing product data is just as exciting as we do, then become part of our team. We wish to work with ambassadors who can contribute and share knowledge on the subject and make companies use our platform and guide them…
+                    %p
+                      Read more here:
+                      = succeed "." do
+                        %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Ambassador-1.8.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Ambassador
                   / .entry-content
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-previous
-                      %a{:href => "/da/blog3", :rel => "prev"} Gratis prøveperiode
+                      %a{:href => "/en/blog3", :rel => "prev"} Free Trial
                     .nav-next
-                      %a{:href => "/da/blog1", :rel => "next"} The Long Tail of Product Data Synchronization
+                      %a{:href => "/en/blog1", :rel => "next"} Flashtest Your Business
               / #main
             / #primary
           / .row

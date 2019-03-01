@@ -55,39 +55,33 @@ published: true
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_da' %}
+      {% include 'header_en' %}
       #content.site-content
         .container
           .row
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
-                %article#post-1051.post-1051.page.type-page.status-publish.hentry
+                %article#post-132.post-132.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Opret bruger
+                    %h1.entry-title Create new user
                   / .entry-header
                   .entry-content
-                    .pf-content
-                      %p Opret dig i Product Data Lake og inviter evt. en af dine samhandelspartnere til at gøre det samme. Så kan i med det samme og uden omkostninger begynde at udveksle informationer.
-                      %p  
-                      %p{:style => "text-align: center;"}
-                        %em
-                          %a.fasc-button.fasc-size-medium.fasc-type-glossy.fasc-rounded-medium{:href => "https://www.productdatalake.com/app/landing/da#signup", :rel => "noopener", :style => "background-color: #33809e; color: #ffffff;", :target => "_blank"} Opret dig her
-                      %p
-                        Her finder du en vejleding om hvordan du opretter dit firma med dig selv som den første bruger hos jer:
-                        = succeed "." do
-                          %a{:href => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/Product-Data-Lake-Getting-Started-1.8.1.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Getting Started
-                      %p
-                        Her finder du vores brugsbetingelser og privatpolitik:
-                        %a{:href => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/Product-Data-Lake-Terms-of-Service-and-Privacy-Policy-201810.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Terms of Service and Privacy Policy.
+                    %p Opret dig i Product Data Lake og inviter evt. en af dine samhandelspartnere til at gøre det samme. Så kan i med det samme og uden omkostninger begynde at udveksle informationer.
+                    %p  
+                    %p{:style => "text-align: center;"}
+                      %em
+                        %a.fasc-button.fasc-size-medium.fasc-type-glossy.fasc-rounded-medium{:href => "https://www.productdatalake.com/app/landing/da#signup", :rel => "noopener", :style => "background-color: #33809e; color: #ffffff;", :target => "_blank"} Opret dig her
+                    %p
+                      Her finder du en vejleding om hvordan du opretter dit firma med dig selv som den første bruger hos jer:
+                      = succeed "." do
+                        %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Getting-Started-1.8.1.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Getting Started
+                    %p
+                      Her finder du vores brugsbetingelser og privatpolitik:
+                      %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Terms-of-Service-and-Privacy-Policy-201810.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Terms of Service and Privacy Policy.
                   / .entry-content
                 / #post-##
               / #main
             / #primary
-            #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
-              .sidebar
-                %aside#media_image-2.widget.widget_media_image
-                  %img.image.wp-image-1058.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2018/11/iStock-1046171366-300x300.jpg", :srcset => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2018/11/iStock-1046171366-300x300.jpg 300w, http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2018/11/iStock-1046171366-150x150.jpg 150w, http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2018/11/iStock-1046171366-768x768.jpg 768w, http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2018/11/iStock-1046171366-1024x1024.jpg 1024w, http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2018/11/iStock-1046171366-370x370.jpg 370w", :style => "max-width: 100%; height: auto;", :width => "300"}/
-            / #secondary
           / .row
         / .container
       / #content

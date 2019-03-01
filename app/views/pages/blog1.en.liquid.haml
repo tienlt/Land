@@ -55,57 +55,33 @@ published: true
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_da' %}
+      {% include 'header_en' %}
       #content.site-content
         .container
           .row
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
-                %article#post-1144.post-1144.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-blog
+                %article#post-142.post-142.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
                   %header.entry-header
-                    %h1.entry-title The Long Tail of Product Data Synchronization
+                    %h1.entry-title Flashtest Your Business
                   / .entry-header
-                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "636", :sizes => "(max-width: 1172px) 100vw, 1172px", :src => "/images/EDI-GDSN-PDL.png", :width => "1172"}/
+                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "497", :sizes => "(max-width: 799px) 100vw, 799px", :src => "{% editable_file Gepard %}/samples/pages/Gepard.jpg{% endeditable_file %}", :width => "799"}/
                   .entry-content
-                    .pf-content
-                      %p
-                        When discussing with peers and interested parties about
-                        = succeed "," do
-                          %a{:href => "https://liliendahl.com/data-quality-3-0/product-data-lake/", :rel => "noopener", :target => "_blank"} Product Data Lake
-                      %p So, what is the difference between those services and Product Data Lake.
-                      %p
-                        %strong Electronic Data Interchange (EDI)
-                        is the concept of businesses electronically communicating information that was traditionally communicated on paper, such as purchase orders and invoices. EDI also has a product catalog functionality encompassing:
-                      %ul
-                        %li Seller name and contact information
-                        %li Terms of sale information, including discounts available
-                        %li Item identification and description
-                        %li Item physical details including type of packaging
-                        %li Item pricing information including quantity and unit of measure
-                      %p
-                        The
-                        %strong Global Data Synchronization Network (GDSN)
-                        is an internet-based, interconnected network of interoperable data pools and a global registry known as the GS1 Global Registry, that enables companies around the globe to exchange standardised and synchronised supply chain data with their trading partners using a standardised Global Product Classification (GPC)
-                        %strong .
-                      %p This service focuses on retail, healthcare, food-service and transport / logistics. In some geographies GS1 is also targeting DIY – do it yourself building materials and tools for consumers.
-                      %p
-                        %strong Product Data Lake
-                        is a cloud service for sharing product information (product data syndication) in the business ecosystems of manufacturers, distributors / wholesalers, merchants, marketplaces and large end users of product information.
-                      %p Our vision is that Product Data Lake will be the process driven key service for exchanging any sort of product information within business ecosystems all over the world, with the aim of optimally assist self-service purchase – both B2C and B2B – of every kind of product.
-                      %p In that way, Product Data Lake is the long tail of product data synchronization supplementing EDI and GDSN for a long range of product groups, product attributes, digital assets, product relationships and product classification systems:
-                      %p
-                        %img.alignnone.size-full.wp-image-20792{:alt => "EDI GDSN PDL", "data-attachment-id" => "20792", "data-comments-opened" => "1", "data-image-description" => "", "data-image-meta" => "{\"aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_length\":\"0\",\"iso\":\"0\",\"shutter_speed\":\"0\",\"title\":\"\",\"orientation\":\"0\"}", "data-image-title" => "EDI GDSN PDL", "data-large-file" => "/images/edi-gdsn-pdl1.png?w=636?w=636", :sizes => "(max-width: 636px) 100vw, 636px", :src => "/images/edi-gdsn-pdl1.png?w=636", :srcset => "/images/edi-gdsn-pdl1.png?w=636 636w, /images/edi-gdsn-pdl1.png?w=150 150w, /images/edi-gdsn-pdl1.png?w=300 300w, /images/edi-gdsn-pdl1.png?w=768 768w, /images/edi-gdsn-pdl1.png?w=1024 1024w, /images/edi-gdsn-pdl1.png 1172w"}/
-                      %p
-                        Find out more in the
-                        = succeed "." do
-                          %a{:href => "/images/Product-Data-Lake-Overview-1.8.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Overview
+                    %p Test if your company exchange data with the speed of a gepard or a snail
+                    .typeform-widget{"data-url" => "https://heleneliliendahl.typeform.com/to/wHCubP", :style => "width: 100%; height: 500px;"}
+                    %p
+                      :javascript
+                        (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
+                    %div{:style => "font-family: Sans-Serif; font-size: 12px; color: #999; opacity: 0.5; padding-top: 5px;"}
+                      powered by
+                      %a{:href => "https://admin.typeform.com/signup?utm_campaign=wHCubP&utm_source=typeform.com-12787555-Pro&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN", :rel => "noopener", :style => "color: #999;", :target => "_blank"} Typeform
                   / .entry-content
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-previous
-                      %a{:href => "/da/blog2", :rel => "prev"} Hold dig ajour med den seneste udvikling
+                      %a{:href => "/en/blog2", :rel => "prev"} Become Ambassador to Product Data Lake
               / #main
             / #primary
           / .row

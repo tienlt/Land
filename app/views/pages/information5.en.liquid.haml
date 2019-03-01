@@ -55,36 +55,29 @@ published: true
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_da' %}
+      {% include 'header_en' %}
       #content.site-content
         .container
           .row
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
-                %article#post-754.post-754.page.type-page.status-publish.hentry
+                %article#post-113.post-113.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Hold dig a jour
+                    %h1.entry-title Free Trial
                   / .entry-header
                   .entry-content
-                    .pf-content
-                      %p
-                        Ønsker du at holde dig a jour med hvad der sker inden for Big data, Product Data Management og Product Information Management, så tilmeld dig
-                        = succeed ". Så mailer vi når der er nye trends, nye løsninger eller andre spændende nyheder på vej." do
-                          %a{:href => "/da/kontaktos"} her
-                      %p
-                        Tilmeld dig nyhedsbrev
-                        %br/
-                        %em Følg Product Data Lake på
-                        %a{:href => "https://www.linkedin.com/company/product-data-lake/", :rel => "noopener", :target => "_blank"}
-                          %em Linkedin
-                        %br/
-                        %em Følg Product Data Lake på
-                        %a{:href => "https://twitter.com/ProductDataLake", :rel => "noopener", :target => "_blank"}
-                          %em Twitter
+                    %p
+                      Log on and test our system. You get 2 month for free and we help you to get started. Send us and e-mail if you need help.
+                      %a{:href => "/en/kontaktos/"} Contact us – link.
                   / .entry-content
                 / #post-##
               / #main
             / #primary
+            #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
+              .sidebar
+                %aside#media_image-9.widget.widget_media_image
+                  %img.image.wp-image-17.attachment-medium.size-medium{:alt => "", :height => "250", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/iStock-1046171344-1-300x250.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
+            / #secondary
           / .row
         / .container
       / #content
