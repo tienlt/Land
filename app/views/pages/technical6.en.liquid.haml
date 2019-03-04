@@ -88,10 +88,11 @@ published: true
             / #primary
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
-                %aside#media_image-3.widget.widget_media_image
+                %aside#media_image-15.widget.widget_media_image
                   %header.entry-header
                     %h4.widget-title Explore Our 10 Business Benefits
-                  %img.image.wp-image-89.attachment-large.size-large{:alt => "", :height => "1024", :sizes => "(max-width: 724px) 100vw, 724px", :src => "{% editable_file Gepard %}/samples/pages/10-Business-Benefits-724x1024.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "724"}/
+                  %a{:href => "{% editable_file Gepard %}/samples/10-Business-Benefits.pdf{% endeditable_file %}"}
+                    %img.image.wp-image-1170.attachment-large.size-large{:alt => "", :height => "1024", :sizes => "(max-width: 724px) 100vw, 724px", :src => "{% editable_file Gepard %}/samples/pages/10-Business-Benefits-724x1024.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "724"}/
             / #secondary
           / .row
         / .container
