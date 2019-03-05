@@ -65,7 +65,7 @@ published: true
                   %header.entry-header
                     %h1.entry-title Velkommen
                   / .entry-header
-                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "1279", :sizes => "(max-width: 2500px) 100vw, 2500px", :src => "/images/iStock-908478148-slide.jpg", :width => "2500"}/
+                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "1279", :sizes => "(max-width: 2500px) 100vw, 2500px", :src => "{% editable_file Gepard %}/samples/pages/iStock-908478148-slide.jpg{% endeditable_file %}", :width => "2500"}/
                   .entry-content
                   / .entry-content
                 / #post-##
@@ -79,7 +79,7 @@ published: true
           / .row
         / .container
       / #content
-      {% include 'foot' %}
+      {% include 'foot_da' %}
     / #page
     {% include 'cookie1' %}
     {% include 'cookie2' %}

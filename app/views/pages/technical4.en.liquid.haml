@@ -61,35 +61,42 @@ published: true
           .row
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
-                %article#post-75.post-75.page.type-page.status-publish.hentry
+                %article#post-908.post-908.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Data Lake and Business Ecosystems
+                    %h1.entry-title Cross Company Data Governance
                   / .entry-header
                   .entry-content
-                    %p Sharing product data within business ecosystems has grown dramatically during the last years driven by the increased use of ecommerce and other customer self-service sales approaches.
-                    %p
-                      Most initiatives around handling product data has been focused on internal processes and technology, and there are many viable solutions for that today. However, we have not seen many solutions that solves the problems in the exchange zones between trading partners
-                      %em> .
-                      Product Data lake uses emerging technology to connect manufacturers and merchants.
-                    %p A data lake is a concept with growing popularity related to big data. A data lake focuses less on predefined standards but makes variant use of data by the time needed possible. Product Data Lake streamlines and automate your business processes within Product Data Syndication by using the data lake concept.
-                    %p
-                      %a{:href => "{% editable_file Gepard %}/samples/pages/Sell-more-Reduce-costs.png{% endeditable_file %}"}
-                        %img.alignnone.size-full.wp-image-1137{:alt => "", :height => "510", :src => "{% editable_file Gepard %}/samples/pages/Sell-more-Reduce-costs.png{% endeditable_file %}", :width => "911"}/
+                    .pf-content
+                      %p When sharing data in a cross company context you will need to expand your data governance framework to cope with the challenges in doing that. Therefore, Product Data Lake have established a partnership with one of the most recommended authorities in data governance: Nicola Askham – the Data Governance Coach.
+                      %p
+                        For a quick overview please have a look at the
+                        = succeed "." do
+                          %a{:href => "{% editable_file Gepard %}/samples/pages/cross-company-data-governance.png{% endeditable_file %}", :rel => "noopener noreferrer", :target => "_blank"} Cross Company Data Governance Framework
+                      %p
+                        Please request more information
+                        = succeed "." do
+                          %a{:href => "http://www.nicolaaskham.com/cross-co-dg-dl", :rel => "noopener noreferrer", :target => "_blank"} here
+                      %p
+                        %a{:href => "{% editable_file Gepard %}/samples/pages/nicola.png{% endeditable_file %}"}
+                          %img.alignnone.size-full.wp-image-1140{:alt => "", :height => "250", :sizes => "(max-width: 589px) 100vw, 589px", :src => "{% editable_file Gepard %}/samples/pages/nicola.png{% endeditable_file %}", :width => "589"}/
+                      %p
+                        %em The triangular and pyramid graphics are trademarks of Nicola Askham Ltd.
                   / .entry-content
                 / #post-##
               / #main
             / #primary
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
-                %aside#media_image-2.widget.widget_media_image
+                %aside#media_image-15.widget.widget_media_image
                   %header.entry-header
-                    %h4.widget-title Get the Product Data Lake Overview
-                  %img.image.wp-image-33.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/SimpleBlue-300x300.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                    %h4.widget-title Explore Our 10 Business Benefits
+                  %a{:href => "{% editable_file Gepard %}/samples/10-Business-Benefits.pdf{% endeditable_file %}"}
+                    %img.image.wp-image-1170.attachment-large.size-large{:alt => "", :height => "1024", :sizes => "(max-width: 724px) 100vw, 724px", :src => "{% editable_file Gepard %}/samples/pages/10-Business-Benefits-724x1024.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "724"}/
             / #secondary
           / .row
         / .container
       / #content
-      {% include 'foot' %}
+      {% include 'foot_en' %}
     / #page
     {% include 'cookie1' %}
     {% include 'cookie2' %}

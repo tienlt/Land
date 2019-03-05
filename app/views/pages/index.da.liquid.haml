@@ -27,9 +27,9 @@
       #main-slider
         .owl-carousel
           .item{:style => "background-image: url({% editable_file Gepard %}/samples/pages/iStock-908478148-slide.jpg{% endeditable_file %}); "}
-            .caption
-              %h2 Velkommen
             / .caption
+            /   %h2 Velkommen
+            / / .caption
         .scroll-down-wrapper
           .scroll-down
             %a{:href => "#scroll"}
@@ -128,7 +128,7 @@
           / .row
         / .container
       / #content
-      {% include 'foot' %}
+      {% include 'foot_da' %}
     / #page
     {% include 'cookie1' %}
     {% include 'cookie2' %}
@@ -148,4 +148,12 @@
       /* <![CDATA[ */
       var business_hub_script_vars = {"slideSpeed":"1000","autoplayTimeout":"1000"};
       /* ]]> */
-    
+    :javascript
+      var userLang = navigator.language || navigator.userLanguage; 
+      if( userLang == "da" && sessionStorage.count != "1"){
+      function change_lang(){
+      document.getElementById('DA').click();
+      sessionStorage.setItem("count", "1");
+      }}
+      }
+      window.onload = change_lang;

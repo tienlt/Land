@@ -114,7 +114,7 @@ published: true
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
                 %aside#media_image-7.widget.widget_media_image
-                  %img.image.wp-image-16.attachment-medium.size-medium{:alt => "", :height => "200", :sizes => "(max-width: 300px) 100vw, 300px", :src => "/samples/pages/iStock-982199098-300x200.jpg", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                  %img.image.wp-image-16.attachment-medium.size-medium{:alt => "", :height => "200", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/iStock-982199098-300x200.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
                 %aside#nav_menu-5.widget.widget_nav_menu
                   %header.entry-header
                     %h4.widget-title Choose Your Business
@@ -132,7 +132,7 @@ published: true
           / .row
         / .container
       / #content
-      {% include 'foot' %}
+      {% include 'foot_en' %}
     / #page
     {% include 'cookie1' %}
     {% include 'cookie2' %}

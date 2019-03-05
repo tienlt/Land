@@ -69,8 +69,8 @@ published: true
                     .pf-content
                       %p Der findes følgende niveauer ved årlig forudbetaling:
                       %p
-                        %a{:href => "/images/Dansk-prisliste.png"}
-                          %img.alignnone.wp-image-1208{:alt => "", :height => "211", :sizes => "(max-width: 636px) 100vw, 636px", :src => "/images/Dansk-prisliste.png", :width => "636"}/
+                        %a{:href => "{% editable_file Gepard %}/samples/pages/Dansk-prisliste.png{% endeditable_file %}"}
+                          %img.alignnone.wp-image-1208{:alt => "", :height => "211", :sizes => "(max-width: 636px) 100vw, 636px", :src => "{% editable_file Gepard %}/samples/pages/Dansk-prisliste.png{% endeditable_file %}", :width => "636"}/
                       %p Priserne er eksklusiv moms.
                       %p Endvidere tilbydes en efterbetalt model med kvartalsvis afregning efter forbrug, hvor der er mindre spring mellem niveauerne. Skriv til info@productdatalake.com for mere information.
                       %p I begge tilfælde tilbydes en 2 måneders gratis prøveperiode.
@@ -82,7 +82,7 @@ published: true
           / .row
         / .container
       / #content
-      {% include 'foot' %}
+      {% include 'foot_da' %}
     / #page
     {% include 'cookie1' %}
     {% include 'cookie2' %}

@@ -75,10 +75,10 @@ published: true
                       %p
                         Her finder du en vejleding om hvordan du opretter dit firma med dig selv som den første bruger hos jer:
                         = succeed "." do
-                          %a{:href => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/Product-Data-Lake-Getting-Started-1.8.1.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Getting Started
+                          %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Getting-Started-1.8.1.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Getting Started
                       %p
                         Her finder du vores brugsbetingelser og privatpolitik:
-                        %a{:href => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/Product-Data-Lake-Terms-of-Service-and-Privacy-Policy-201810.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Terms of Service and Privacy Policy.
+                        %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Terms-of-Service-and-Privacy-Policy-201810.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Terms of Service and Privacy Policy.
                   / .entry-content
                 / #post-##
               / #main
@@ -86,12 +86,12 @@ published: true
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
                 %aside#media_image-2.widget.widget_media_image
-                  %img.image.wp-image-1058.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2018/11/iStock-1046171366-300x300.jpg", :srcset => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2018/11/iStock-1046171366-300x300.jpg 300w, http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2018/11/iStock-1046171366-150x150.jpg 150w, http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2018/11/iStock-1046171366-768x768.jpg 768w, http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2018/11/iStock-1046171366-1024x1024.jpg 1024w, http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2018/11/iStock-1046171366-370x370.jpg 370w", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                  %img.image.wp-image-1058.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/iStock-1046171366-300x300.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
             / #secondary
           / .row
         / .container
       / #content
-      {% include 'foot' %}
+      {% include 'foot_da' %}
     / #page
     {% include 'cookie1' %}
     {% include 'cookie2' %}

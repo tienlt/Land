@@ -65,7 +65,7 @@ published: true
                   %header.entry-header
                     %h1.entry-title Hvad kan vi?
                   / .entry-header
-                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "1600", :sizes => "(max-width: 2133px) 100vw, 2133px", :src => "/images/PDL_How_it_works-1.png", :width => "2133"}/
+                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "1600", :sizes => "(max-width: 2133px) 100vw, 2133px", :src => "{% editable_file Gepard %}/samples/pages/PDL_How_it_works-1.png{% endeditable_file %}", :width => "2133"}/
                   .entry-content
                     .pf-content
                       %p Udveksling af fyldestgørende og opdaterede produktinformationer imellem handelspartnere (producenter, grossister, forhandlere, detailbutikker og e-shops) er afgørende for at alle led opnår den højeste omsætning.
@@ -86,7 +86,7 @@ published: true
           / .row
         / .container
       / #content
-      {% include 'foot' %}
+      {% include 'foot_da' %}
     / #page
     {% include 'cookie1' %}
     {% include 'cookie2' %}

@@ -29,9 +29,9 @@
       #main-slider
         .owl-carousel
           .item{:style => "background-image: url({% editable_file Gepard %}/samples/pages/iStock-908478148-slide.jpg{% endeditable_file %}); "}
-            .caption
-              %h2 Welcome
             / .caption
+            /   %h2 Welcome
+            / / .caption
         .scroll-down-wrapper
           .scroll-down
             %a{:href => "#scroll"}
@@ -61,7 +61,7 @@
                       / .entry-header
                       .entry-content
                         %p
-                          Test om Jeres virksomhed udveksler produktdata i sneglefart eller som som en gepard.. powered by...
+                          Test if your company exchange data with the speed of a gepard or a snail...
                     / .blog-content
                   / .blog-post
                 / .col
@@ -124,24 +124,7 @@
           / .blog-news
         / #main
       / #primary
-      %footer#colophon.site-footer{:role => "contentinfo"}
-        #site-generator.site-info
-          .container
-            .col.col-1-of-1
-              .footer-copyright
-                #copyright
-                  %p Copyright 2016. All rights reserved.
-                .go-to-top
-                  %a.go-to-top-link{:href => "#"}
-                    %i.fa.fa-angle-up
-                    = succeed "Back" do
-                      %br/
-                / .go-to-top
-              / .footer-copyright
-            / .col
-          / .wrapper
-        / #site-generator
-      / .site-footer
+      {% include 'foot_en' %}
     / #page
     {% include 'cookie1' %}
     {% include 'cookie2' %}
@@ -162,11 +145,10 @@
       /* ]]> */
     :javascript
       var userLang = navigator.language || navigator.userLanguage; 
-      if( userLang == "da"){
+      if( userLang == "da" && sessionStorage.count != "1"){
       function change_lang(){
       document.getElementById('DA').click();
+      sessionStorage.setItem("count", "1");
       }}
-      else{
-      document.getElementById('EN').click();
-      }
       window.onload = change_lang;
+    

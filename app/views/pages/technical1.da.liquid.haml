@@ -69,28 +69,29 @@ published: true
                     .pf-content
                       %p Product Data Lake offers product data syndication freedom by letting manufacturers push product information using their data standards and their preferred exchange method and merchants pull product information using their data standards and their preferred exchange method.
                       %p
-                        %a{:href => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/Product-Data-Syndication.png"}
-                          %img.alignnone.size-full.wp-image-1127{:alt => "", :height => "1080", :sizes => "(max-width: 1920px) 100vw, 1920px", :src => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/Product-Data-Syndication.png", :srcset => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/Product-Data-Syndication.png 1920w, http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/Product-Data-Syndication-300x169.png 300w, http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/Product-Data-Syndication-768x432.png 768w, http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/Product-Data-Syndication-1024x576.png 1024w, http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/Product-Data-Syndication-658x370.png 658w", :width => "1920"}/
+                        %a{:href => "{% editable_file Gepard %}/samples/pages/Product-Data-Syndication.png{% endeditable_file %}"}
+                          %img.alignnone.size-full.wp-image-1127{:alt => "", :height => "1080", :sizes => "(max-width: 1920px) 100vw, 1920px", :src => "{% editable_file Gepard %}/samples/pages/Product-Data-Syndication.png{% endeditable_file %}",:width => "1920"}/
                       %p Product Data Lake is built to ensure product data quality by achieving:
                       %ul
                         %li
                           %strong Completeness
-                          = succeed "of" do
+                          = succeed "of product information by enabling trading partners to exchange product data in a uniform way" do
                             %strong
                         %li
                           %strong Timeliness
-                          of product information by connecting trading partners in a process driven way
+                          = succeed "of product information by connecting trading partners in a process driven way" do
+                            %strong
                         %li
                           %strong Conformity
-                          = succeed "of" do
+                          = succeed " of product information by encompassing various international standards for product information" do
                             %strong
                         %li
                           %strong Consistency
-                          = succeed "of" do
+                          = succeed "of product information by allowing upstream trading partners and downstream trading partners to interact with in-house structure of product information" do
                             %strong
                         %li
                           %strong Accuracy
-                          = succeed "of" do
+                          = succeed "of product information by ensuring transparency of product information across the supply chain" do
                             %strong
                   / .entry-content
                 / #post-##
@@ -101,13 +102,13 @@ published: true
                 %aside#media_image-23.widget.widget_media_image
                   %header.entry-header
                     %h4.widget-title Get the Product Data Lake Overview
-                  %a{:href => "http://www.soerensen.fr/psi/wordpress/wp-content/uploads/2019/01/Product-Data-Lake-Overview-1.8.pdf"}
-                    %img.image.wp-image-1133.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "/images/SimpleBlue-300x300.png", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                  %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Overview-1.8.pdf{% endeditable_file %}"}
+                    %img.image.wp-image-1133.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/SimpleBlue-300x300.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
             / #secondary
           / .row
         / .container
       / #content
-      {% include 'foot' %}
+      {% include 'foot_da' %}
     / #page
     {% include 'cookie1' %}
     {% include 'cookie2' %}
