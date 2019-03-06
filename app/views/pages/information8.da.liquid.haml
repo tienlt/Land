@@ -69,37 +69,37 @@ published: true
                     .pf-content
                       #wpcf7-f18-p1013-o1.wpcf7{:dir => "ltr", :lang => "en-US", :role => "form"}
                         .screen-reader-response
-                        %form.wpcf7-form{:action => "/psi/wordpress/?page_id=1013#wpcf7-f18-p1013-o1", :method => "post", :novalidate => "novalidate"}
-                          %div{:style => "display: none;"}
-                            %input{:name => "_wpcf7", :type => "hidden", :value => "18"}/
-                            %input{:name => "_wpcf7_version", :type => "hidden", :value => "5.1"}/
-                            %input{:name => "_wpcf7_locale", :type => "hidden", :value => "en_US"}/
-                            %input{:name => "_wpcf7_unit_tag", :type => "hidden", :value => "wpcf7-f18-p1013-o1"}/
-                            %input{:name => "_wpcf7_container_post", :type => "hidden", :value => "1013"}/
-                            %input{:name => "g-recaptcha-response", :type => "hidden", :value => ""}/
-                          %p
+                        %div{:method => "post", :novalidate => "novalidate",:id => "f-contact"}
+                        %p{:style => "margin-bottom : 0px"}
+                          %label
                             Navn (skal oplyses)
                             %br/
                             %span.wpcf7-form-control-wrap.your-name
-                              %input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{"aria-invalid" => "false", "aria-required" => "true", :name => "your-name", :size => "40", :type => "text", :value => ""}/
-                          %p
+                              %input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{"aria-invalid" => "false", "aria-required" => "true",:id => "b-name", :name => "your-name", :size => "40", :type => "text", :value => ""}/
+                              %p{:style => "display: none; color : red", :id => "sb-name"} Feltet er påkrævet..
+                        %p{:style => "margin-bottom : 0px"}
+                          %label
                             E-mail adresse (skal oplyses)
                             %br/
                             %span.wpcf7-form-control-wrap.your-email
-                              %input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email{"aria-invalid" => "false", "aria-required" => "true", :name => "your-email", :size => "40", :type => "email", :value => ""}/
-                          %p
-                            Telefonnummer
+                              %input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email{"aria-invalid" => "false",:id => "b-email", "aria-required" => "true", :name => "your-email", :size => "40", :type => "email", :value => ""}/
+                              %p{:style => "display: none; color : red", :id => "sb-email"} Feltet er påkrævet.
+                              %p{:style => "display: none; color : red", :id => "ssb-email"} Den indtastede e-mail-adresse er ugyldig.
+                        %p
+                          %label
+                            Telefonnummer 
                             %br/
-                            %span.wpcf7-form-control-wrap.tel-683
-                              %input.wpcf7-form-control.wpcf7-text.wpcf7-tel.wpcf7-validates-as-tel{"aria-invalid" => "false", :name => "tel-683", :size => "40", :type => "tel", :value => ""}/
-                          %p
+                            %span.wpcf7-form-control-wrap.your-subject
+                              %input.wpcf7-form-control.wpcf7-text{"aria-invalid" => "false",:id => "b-subject", :name => "your-subject", :size => "40", :type => "text", :value => ""}/
+                        %p
+                          %label
                             Besked
                             %br/
                             %span.wpcf7-form-control-wrap.your-message
-                              %textarea.wpcf7-form-control.wpcf7-textarea{"aria-invalid" => "false", :cols => "40", :name => "your-message", :rows => "10"}
-                          %p
-                            %input.wpcf7-form-control.wpcf7-submit{:type => "submit", :value => "Send"}/
-                          .wpcf7-response-output.wpcf7-display-none
+                              %textarea.wpcf7-form-control.wpcf7-textarea{"aria-invalid" => "false",:id => "b-message", :cols => "40", :name => "your-message", :rows => "10"}
+                        %p
+                          %button{:id => "b-submit", :type => "button"} Send
+                        %div{:role => "alert", :style => "display: none; color : green", :id => "ssend"} Tak for din besked. Den er nu afsendt.
                   / .entry-content
                 / #post-##
               / #main
@@ -120,7 +120,34 @@ published: true
       /* ]]> */
     :javascript
       /* <![CDATA[ */
-      var wpcf7 = {"apiSettings":{"root":"http:\/\/soerensen.fr\/psi\/UK\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+      $('#b-submit').click(function(){
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        regex.test(".bom");
+        if (  ($('#b-name').val() == "") || ($('#b-email').val() == "") ){
+          if ($('#b-name').val() == ""){
+            $('#sb-name').css('display','block');
+          }
+          if ($('#sb-email').val() == ""){
+            $('#sb-email').css('display','block');
+          }
+        } else if (!(regex.test($('#b-email').val()))) {
+            $('#ssb-email').css('display','block');
+        } else {
+          $('#sb-name').css('display','none');
+          $('#sb-email').css('display','none');
+          $('#ssb-email').css('display','none');
+          setTimeout(function(){
+            $('#b-name').val("");
+            $('#b-email').val("");
+            $('#b-subject').val("");
+            $('#b-message').val("");
+            $('#ssend').css('display','block');
+          }, 1500);
+          $.ajax({url: "http://localhost:3000/api/v1/send_contact?first_name="+$('#b-name').val()+"&semail="+$('#b-email').val()+"&ssubject="+$('#b-subject').val()+"&stele="+$('#b-tele').val()+"&smessage="+$('#b-message').val(), success: function(result){
+            
+          }});
+        }
+      });
       /* ]]> */
     {{ 'application.js' | javascript_tag }}
     :javascript

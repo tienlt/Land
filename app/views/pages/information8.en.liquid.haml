@@ -69,41 +69,38 @@ published: true
                     %p Get in contact here:
                     #wpcf7-f34-p119-o1.wpcf7{:dir => "ltr", :lang => "da-DK", :role => "form"}
                       .screen-reader-response
-                      %form.wpcf7-form{:action => "/psi/UK/information/contact/#wpcf7-f34-p119-o1", :method => "post", :novalidate => "novalidate"}
-                        %div{:style => "display: none;"}
-                          %input{:name => "_wpcf7", :type => "hidden", :value => "34"}/
-                          %input{:name => "_wpcf7_version", :type => "hidden", :value => "5.1.1"}/
-                          %input{:name => "_wpcf7_locale", :type => "hidden", :value => "da_DK"}/
-                          %input{:name => "_wpcf7_unit_tag", :type => "hidden", :value => "wpcf7-f34-p119-o1"}/
-                          %input{:name => "_wpcf7_container_post", :type => "hidden", :value => "119"}/
-                          %input{:name => "g-recaptcha-response", :type => "hidden", :value => ""}/
-                        %p
+                      %div{:method => "post", :novalidate => "novalidate",:id => "f-contact"}
+                        %p{:style => "margin-bottom : 0px"}
                           %label
                             Your name (mandatory)
                             %br/
                             %span.wpcf7-form-control-wrap.your-name
-                              %input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{"aria-invalid" => "false", "aria-required" => "true", :name => "your-name", :size => "40", :type => "text", :value => ""}/
-                        %p
+                              %input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{"aria-invalid" => "false", "aria-required" => "true",:id => "b-name", :name => "your-name", :size => "40", :type => "text", :value => ""}/
+                              %p{:style => "display: none; color : red", :id => "sb-name"} Please enter require field.
+                        %p{:style => "margin-bottom : 0px"}
                           %label
                             Your email (mandatory)
                             %br/
                             %span.wpcf7-form-control-wrap.your-email
-                              %input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email{"aria-invalid" => "false", "aria-required" => "true", :name => "your-email", :size => "40", :type => "email", :value => ""}/
+                              %input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email{"aria-invalid" => "false",:id => "b-email", "aria-required" => "true", :name => "your-email", :size => "40", :type => "email", :value => ""}/
+                              %p{:style => "display: none; color : red", :id => "sb-email"} Please enter require field.
+                              %p{:style => "display: none; color : red", :id => "ssb-email"} The e-mail address entered is invalid.
                         %p
                           %label
                             Subject
                             %br/
                             %span.wpcf7-form-control-wrap.your-subject
-                              %input.wpcf7-form-control.wpcf7-text{"aria-invalid" => "false", :name => "your-subject", :size => "40", :type => "text", :value => ""}/
+                              %input.wpcf7-form-control.wpcf7-text{"aria-invalid" => "false",:id => "b-tele", :name => "your-subject", :size => "40", :type => "text", :value => ""}/
                         %p
                           %label
                             Your message
                             %br/
                             %span.wpcf7-form-control-wrap.your-message
-                              %textarea.wpcf7-form-control.wpcf7-textarea{"aria-invalid" => "false", :cols => "40", :name => "your-message", :rows => "10"}
+                              %textarea.wpcf7-form-control.wpcf7-textarea{"aria-invalid" => "false",:id => "b-message", :cols => "40", :name => "your-message", :rows => "10"}
                         %p
-                          %input.wpcf7-form-control.wpcf7-submit{:type => "submit", :value => "Submit"}/
-                        .wpcf7-response-output.wpcf7-display-none
+                          %button{:id => "b-submit", :type => "button"} Submit
+                        %div{:role => "alert", :style => "display: none; color : green", :id => "ssend"} Thank you for your message. It has now been shipped.
+  
                   / .entry-content
                 / #post-##
               / #main
@@ -124,7 +121,36 @@ published: true
       /* ]]> */
     :javascript
       /* <![CDATA[ */
-      var wpcf7 = {"apiSettings":{"root":"http:\/\/soerensen.fr\/psi\/UK\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+      $('#b-submit').click(function(){
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        regex.test(".bom");
+        if (  ($('#b-name').val() == "") || ($('#b-email').val() == "") ){
+          if ($('#b-name').val() == ""){
+            $('#sb-name').css('display','block');
+          }
+          if ($('#sb-email').val() == ""){
+            $('#sb-email').css('display','block');
+          }
+        } else if (!(regex.test($('#b-email').val()))) {
+            $('#ssb-email').css('display','block');
+        } else {
+          $('#sb-name').css('display','none');
+          $('#sb-email').css('display','none');
+          $('#ssb-email').css('display','none');
+          
+          setTimeout(function(){
+            $('#b-name').val("");
+            $('#b-email').val("");
+            $('#b-tele').val("");
+            $('#b-message').val("");
+            $('#ssend').css('display','block');
+          }, 1500);
+          $.ajax({url: "http://localhost:3000/api/v1/send_contact?first_name="+$('#b-name').val()+"&semail="+$('#b-email').val()+"&ssubject="+$('#b-subject').val()+"&stele="+$('#b-tele').val()+"&smessage="+$('#b-message').val(), success: function(result){
+            
+          }});
+         
+        }
+      });
       /* ]]> */
     {{ 'application.js' | javascript_tag }}
     :javascript
