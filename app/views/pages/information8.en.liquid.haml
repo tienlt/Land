@@ -90,7 +90,7 @@ published: true
                             Subject
                             %br/
                             %span.wpcf7-form-control-wrap.your-subject
-                              %input.wpcf7-form-control.wpcf7-text{"aria-invalid" => "false",:id => "b-tele", :name => "your-subject", :size => "40", :type => "text", :value => ""}/
+                              %input.wpcf7-form-control.wpcf7-text{"aria-invalid" => "false",:id => "b-subject", :name => "your-subject", :size => "40", :type => "text", :value => ""}/
                         %p
                           %label
                             Your message
@@ -122,6 +122,7 @@ published: true
     :javascript
       /* <![CDATA[ */
       $('#b-submit').click(function(){
+        $('#ssend').css('display','none');
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         regex.test(".bom");
         if (  ($('#b-name').val() == "") || ($('#b-email').val() == "") ){
@@ -141,11 +142,11 @@ published: true
           setTimeout(function(){
             $('#b-name').val("");
             $('#b-email').val("");
-            $('#b-tele').val("");
+            $('#b-subject').val("");
             $('#b-message').val("");
             $('#ssend').css('display','block');
           }, 1500);
-          $.ajax({url: "http://localhost:3000/api/v1/send_contact?first_name="+$('#b-name').val()+"&semail="+$('#b-email').val()+"&ssubject="+$('#b-subject').val()+"&stele="+$('#b-tele').val()+"&smessage="+$('#b-message').val(), success: function(result){
+          $.ajax({url: "http://172.16.4.58:3000/api/v1/send_contact?first_name="+$('#b-name').val()+"&semail="+$('#b-email').val()+"&ssubject="+$('#b-subject').val()+"&stele="+$('#b-tele').val()+"&smessage="+$('#b-message').val(), success: function(result){
             
           }});
          

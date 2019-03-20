@@ -161,11 +161,10 @@
         string_search = url.split("s=")[1]
         var i;
         for (i = 0; i < array_3en.length; i++) { 
-          if (array_3en[i].includes(string_search)){
+          if (  ( array_3en[i].includes(string_search) ) || ( array_2en[i].includes(string_search)  )  ){
             result.push(i)
           }
         }
-        debugger
         var html = ``;
         for (i = 0; i < result.length; i++) { 
           html = html + `
@@ -175,7 +174,7 @@
                 </header><!-- .entry-header -->
 
             <div class="entry-summary">
-              <p>`+array_3en[result[i]]substring(0,100)+` […]</p>
+              <p>`+array_3en[result[i]].substring(0,100)+` […]</p>
             </div><!-- .entry-summary -->
             
           </article><!-- #post-## -->

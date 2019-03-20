@@ -165,7 +165,7 @@
         string_search = url.split("s=")[1]
         var i;
         for (i = 0; i < array_3en.length; i++) { 
-          if (array_3en[i].includes(string_search)){
+          if (  ( array_3en[i].includes(string_search) ) || (array_2en[i].includes(string_search)) ) {
             result.push(i)
           }
         }

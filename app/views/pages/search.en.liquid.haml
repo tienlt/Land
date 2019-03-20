@@ -1,0 +1,49 @@
+---
+title: Search
+
+# true if the page is included in the menu
+listed: true
+
+# true if the page is published
+published: true
+
+# true if the page can be used as a layout for new pages created by the editors
+# is_layout: true
+
+# position among sibling pages
+# position: 1
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# other unique identifier of this page. To be used with the path_to liquid tag.
+# handle: my-page-handle
+
+# content type that this page is templatizing
+# content_type: "<slug of one of the content types>"
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+
+# Control the display of the page in the back-office.
+# display_settings:
+#   hidden: true          # hidden for authors?
+---
+{% search_for params.query, per_page: 10, page: params.page %}
+
+<p>{{ search.total_entries }} elements found.</p>
+
+<ul>
+{% for result in search.results %}
+<li><a href="/{{result.slug}}">{{ result.title }}</a></li>
+{% endfor %}
+</ul>
+
+{% if search.total_pages > params.page %}
+<p>
+<a href="?page={{ params.page | plus: 1 }}&query={{ params.query }}">Next page</a>
+</p>
+{% endif %}
+
+{% endsearch_for %}
