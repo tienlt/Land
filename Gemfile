@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'locomotivecms_wagon', '~> 2.4.0'
-
 # gem 'guard-livereload', '~> 2.5.1'
 
 group :development do
@@ -21,4 +20,5 @@ group :misc do
   # Add your extra gems here
   # gem 'susy', require: 'susy'
   # gem 'bourbon', require: 'bourbon'
+  gem 'mycustomrendering', require: true, git: 'https://github.com/tienlt/mycustomrendering'
 end
