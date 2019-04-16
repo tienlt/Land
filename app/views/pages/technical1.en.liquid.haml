@@ -63,13 +63,17 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-71.post-71.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Product Data Syndication Freedom
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Product Data Syndication Freedom
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
+                    {% editable_text block_content %}
                     %p Product Data Lake offers product data syndication freedom by letting manufacturers push product information using their data standards and their preferred exchange method and merchants pull product information using their data standards and their preferred exchange method.
                     %p
                       %a{:href => "/samples/pages/Product-Data-Syndication.png"}
-                        %img.alignnone.size-full.wp-image-1127{:alt => "", :height => "1080", :src => "{% editable_file Gepard %}/samples/pages/Product-Data-Syndication.png{% endeditable_file %}", :width => "1920"}/
+                        %img.alignnone.size-full.wp-image-1127{:alt => "", :height => "1080", :src => "/samples/pages/Product-Data-Syndication.png", :width => "1920"}/
                     %p Product Data Lake is built to ensure product data quality by achieving:
                     %ul
                       %li
@@ -88,6 +92,7 @@ published: true
                       %li
                         %strong Accuracy
                         of product information by ensuring transparency of product information across the supply chain
+                    {% endeditable_text %}    
                   / .entry-content
                 / #post-##
               / #main
@@ -97,7 +102,7 @@ published: true
                 %aside#media_image-2.widget.widget_media_image
                   %header.entry-header
                     %h4.widget-title Get the Product Data Lake Overview
-                  %img.image.wp-image-33.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/SimpleBlue-300x300.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                  %img.image.wp-image-33.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image %}/samples/pages/SimpleBlue-300x300.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
             / #secondary
           / .row
         / .container

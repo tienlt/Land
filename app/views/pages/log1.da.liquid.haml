@@ -63,10 +63,14 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-1051.post-1051.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Opret bruger
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Opret bruger
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                     .pf-content
+                      {% editable_text block_content %}
                       %p Opret dig i Product Data Lake og inviter evt. en af dine samhandelspartnere til at gøre det samme. Så kan i med det samme og uden omkostninger begynde at udveksle informationer.
                       %p  
                       %p{:style => "text-align: center;"}
@@ -75,10 +79,11 @@ published: true
                       %p
                         Her finder du en vejleding om hvordan du opretter dit firma med dig selv som den første bruger hos jer:
                         = succeed "." do
-                          %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Getting-Started-1.8.1.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Getting Started
+                          %a{:href => "/samples/Product-Data-Lake-Getting-Started-1.8.1.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Getting Started
                       %p
                         Her finder du vores brugsbetingelser og privatpolitik:
-                        %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Terms-of-Service-and-Privacy-Policy-201810.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Terms of Service and Privacy Policy.
+                        %a{:href => "/samples/Product-Data-Lake-Terms-of-Service-and-Privacy-Policy-201810.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Terms of Service and Privacy Policy.
+                      {% endeditable_text %}  
                   / .entry-content
                 / #post-##
               / #main
@@ -86,7 +91,7 @@ published: true
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
                 %aside#media_image-2.widget.widget_media_image
-                  %img.image.wp-image-1058.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/iStock-1046171366-300x300.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                  %img.image.wp-image-1058.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "/samples/pages/iStock-1046171366-300x300.jpg", :style => "max-width: 100%; height: auto;", :width => "300"}/
             / #secondary
           / .row
         / .container

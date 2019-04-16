@@ -63,13 +63,17 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-1013.post-1013.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Kontakt os
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Kontakt os
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                     .pf-content
                       #wpcf7-f18-p1013-o1.wpcf7{:dir => "ltr", :lang => "en-US", :role => "form"}
                         .screen-reader-response
                         %div{:method => "post", :novalidate => "novalidate",:id => "f-contact"}
+                        {% editable_text block_content %}
                         %p{:style => "margin-bottom : 0px"}
                           %label
                             Navn (skal oplyses)
@@ -100,6 +104,7 @@ published: true
                         %p
                           %button{:id => "b-submit", :type => "button"} Send
                         %div{:role => "alert", :style => "display: none; color : green", :id => "ssend"} Tak for din besked. Den er nu afsendt.
+                        {% endeditable_text %}
                   / .entry-content
                 / #post-##
               / #main

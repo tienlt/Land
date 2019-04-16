@@ -63,7 +63,10 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-742.post-742.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Lyntest Jeres egen virksomhed
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Lyntest Jeres egen virksomhed
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                     .pf-content

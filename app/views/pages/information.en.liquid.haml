@@ -63,7 +63,10 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-56.post-56.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Information
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Information
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                   / .entry-content

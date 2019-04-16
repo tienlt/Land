@@ -63,10 +63,14 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-756.post-756.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Log on
+                    %h1.entry-title
+                      {% editable_text block_header %} 
+                      Log on
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                     .pf-content
+                      {% editable_text block_content %}
                       %p
                         Log på din brugerkonto hos Product Data Lake her:
                         %br/
@@ -74,6 +78,7 @@ published: true
                       %p{:style => "text-align: center;"}
                         %em
                           %a.fasc-button.fasc-size-medium.fasc-type-glossy.fasc-rounded-medium{href: 'http://172.16.4.58:3000/landing/da#login',:style => "background-color: #33809e; color: #ffffff;", :target => "_blank"} Log ind
+                      {% endeditable_text %}    
                   / .entry-content
                 / #post-##
               / #main

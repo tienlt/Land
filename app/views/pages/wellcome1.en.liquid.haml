@@ -65,13 +65,18 @@ published: true
                   %main#main.site-main{:role => "main"}
                     %article#post-728.post-728.page.type-page.status-publish.hentry
                       %header.entry-header
-                        %h1.entry-title Om Product Data Lake
+                        %h1.entry-title 
+                          {% editable_text block_header %}
+                          About Product Data Lake
+                          {% endeditable_text %}
                       / .entry-header
                       .entry-content
                         .pf-content
-                          %p Product Data Lake (PDL) er en fuldt udviklet cloud baseret IT-løsning til udveksling af produktdata imellem handelspartnere. PDL er ”drop box” lignende tjeneste, hvor 2 handelspartnere kan udveksle produktinformationer helt automatisk. PDL kan også binde handelspartneres ERP og PIM systemer sammen. Når en part ”up loader” data ”pushes” de automatisk ind i ”Product Data Lake” som så konverterer dem til at kunne pushes videre ind i samhandelspartnernes forskellige systemer. Hver enkelt partner har en unik profil, så det er kun de informationer som ”up loader´en” bestemmer hver enkelt partner skal have, som frigives.
-                          %p PDL er udviklet af specialister med den største viden og erfaring inden for Big Data og Master Data Magement systemer og med stor viden om den teknolog der kommer til styre fremtidens løsninger inden for udveksling af produktdata. Det gælder på tværs af brancher og lande.
-                          %p Product Data Lake drives af Henrik Engel, CEO og Henrik Liliendahl, CTO.
+                          {% editable_text block_content %}
+                          %p Product Data Lake (PDL) is a fully developed, cloud-based platform that allows business partners to exchange product information. The functionality of PDL is similar to that of DropBox. 
+                          %p No matter how and in what form the sender stores and transfers the data, and the trading partner wishes to receive the data, PDL handles the exchange and conversion of the data automatically. PDL can also connect any type of ERP and PIM systems. When one party uploads data to PDL from an ERP or PIM system, the data is automatically “pushed” into the product data lake that converts the data into the format that can be transferred into the ERP or PIM system used by the trading partner. Each partner has a unique profile. The uploading party determines, which information is released and forwarded to the respective trading partner.  
+                          %p PDL is developed by specialists with extensive knowledge about and experience with ”Big Data” and ”Master Data Management”. Without any need for human interaction, PDL can handle the rapidly growing demand for exchanging increasingly large amounts of data between business partners across the globe – regardless of the type of business or geographical location.
+                          {% endeditable_text %}
                       / .entry-content
                     / #post-##
                   / #main
@@ -79,7 +84,7 @@ published: true
                 #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
                   .sidebar
                     %aside#media_image-2.widget.widget_media_image
-                      %img.image.wp-image-1058.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/iStock-1046171366-260x250.jpg{% endeditable_file %}",:style => "max-width: 100%; height: auto;", :width => "300"}/
+                      %img.image.wp-image-1058.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image %}/samples/pages/iStock-1046171366-260x250.jpg{% endeditable_file %}",:style => "max-width: 100%; height: auto;", :width => "300"}/
                 / #secondary
               / .row
             / .container

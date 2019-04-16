@@ -63,7 +63,10 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-51.post-51.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Choose your business
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Choose your business
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                   / .entry-content

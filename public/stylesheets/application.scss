@@ -581,7 +581,6 @@ Menu Start
     width: 100%;
 }
 .home .full-nav-menu {
-    border-bottom: none;
 }
 .main-navigation:before, .main-navigation:after {
     clear: both;
@@ -1104,7 +1103,7 @@ header#masthead.affix .site-branding img {
     transition: width .4s ease-in;
 }
 .site-branding p.site-description {
-    font-size: 11px;
+    
     margin-bottom: 10px;
 }
 .header-title-text.sticky-header .site-branding h1.site-title,
@@ -1120,7 +1119,7 @@ a.custom-logo-link {
     display: block;
 }
 .site-branding p.site-description {
-    font-size: 11px;
+    
     margin-bottom:0px;
     position: relative;
 }
@@ -3255,7 +3254,6 @@ aside.widget input {
 
 .sidebar .widget {
     background: #fff;
-    border: 1px solid #ddd;
     margin-bottom: 40px;
     text-align: left;
     padding: 10px;

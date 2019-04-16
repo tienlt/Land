@@ -63,7 +63,10 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-117.post-117.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Watch Our Movie Clip
+                    %h1.entry-title
+                      {% editable_text block_header %}
+                      Watch Our Movie Clip
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                     .wp-video{:style => "width: 640px;"}
@@ -78,7 +81,7 @@ published: true
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
                 %aside#media_image-10.widget.widget_media_image
-                  %img.image.wp-image-29.attachment-medium.size-medium{:alt => "", :height => "169", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/Product-Data-Lake_Video_FHD_The-lake-300x169.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                  %img.image.wp-image-29.attachment-medium.size-medium{:alt => "", :height => "169", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image %}/samples/pages/Product-Data-Lake_Video_FHD_The-lake-300x169.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
             / #secondary
           / .row
         / .container

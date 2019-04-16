@@ -63,9 +63,13 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-67.post-67.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Q &amp; A
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Q &amp; A
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
+                    {% editable_text block_content %}
                     %p
                       %strong The most frequently asked questions (with corresponding answers) about Product Data Lake (PDL)
                     %p
@@ -135,6 +139,7 @@ published: true
                       %strong 12) Many of our suppliers have their own portals that we have to access in order to collect data. Is there a smarter way of doing this?
                       %br/
                       Yes, hook up to PDL and ask your suppliers to connect their portals, as well. That way, product data is automatically transferred from your suppliers to you. It is a top priority for your suppliers that you always have updated product information. Therefore, they are bound to listen to your requests.
+                    {% endeditable_text %}  
                   / .entry-content
                 / #post-##
               / #main

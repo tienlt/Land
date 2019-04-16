@@ -63,24 +63,29 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-908.post-908.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Cross Company Data Governance
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Cross Company Data Governance
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                     .pf-content
+                      {% editable_text block_content %}
                       %p When sharing data in a cross company context you will need to expand your data governance framework to cope with the challenges in doing that. Therefore, Product Data Lake have established a partnership with one of the most recommended authorities in data governance: Nicola Askham – the Data Governance Coach.
                       %p
                         For a quick overview please have a look at the
                         = succeed "." do
-                          %a{:href => "{% editable_file Gepard %}/samples/pages/cross-company-data-governance.png{% endeditable_file %}", :rel => "noopener noreferrer", :target => "_blank"} Cross Company Data Governance Framework
+                          %a{:href => "/samples/pages/cross-company-data-governance.png", :rel => "noopener noreferrer", :target => "_blank"} Cross Company Data Governance Framework
                       %p
                         Please request more information
                         = succeed "." do
                           %a{:href => "http://www.nicolaaskham.com/cross-co-dg-dl", :rel => "noopener noreferrer", :target => "_blank"} here
                       %p
-                        %a{:href => "{% editable_file Gepard %}/samples/pages/nicola.png{% endeditable_file %}"}
-                          %img.alignnone.size-full.wp-image-1140{:alt => "", :height => "250", :sizes => "(max-width: 589px) 100vw, 589px", :src => "{% editable_file Gepard %}/samples/pages/nicola.png{% endeditable_file %}", :width => "589"}/
+                        %a{:href => "/samples/pages/nicola.png"}
+                          %img.alignnone.size-full.wp-image-1140{:alt => "", :height => "250", :sizes => "(max-width: 589px) 100vw, 589px", :src => "/samples/pages/nicola.png", :width => "589"}/
                       %p
                         %em The triangular and pyramid graphics are trademarks of Nicola Askham Ltd.
+                      {% endeditable_text %}  
                   / .entry-content
                 / #post-##
               / #main
@@ -90,8 +95,8 @@ published: true
                 %aside#media_image-15.widget.widget_media_image
                   %header.entry-header
                     %h4.widget-title Explore Our 10 Business Benefits
-                  %a{:href => "{% editable_file Gepard %}/samples/10-Business-Benefits.pdf{% endeditable_file %}"}
-                    %img.image.wp-image-1170.attachment-large.size-large{:alt => "", :height => "1024", :sizes => "(max-width: 724px) 100vw, 724px", :src => "{% editable_file Gepard %}/samples/pages/10-Business-Benefits-724x1024.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "724"}/
+                  %a{:href => "/samples/10-Business-Benefits.pdf"}
+                    %img.image.wp-image-1170.attachment-large.size-large{:alt => "", :height => "1024", :sizes => "(max-width: 724px) 100vw, 724px", :src => "{% editable_file image %}/samples/pages/10-Business-Benefits-724x1024.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "724"}/
             / #secondary
           / .row
         / .container

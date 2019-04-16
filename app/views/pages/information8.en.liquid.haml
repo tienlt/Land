@@ -63,13 +63,17 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-119.post-119.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Contact
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Contact
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                     %p Get in contact here:
                     #wpcf7-f34-p119-o1.wpcf7{:dir => "ltr", :lang => "da-DK", :role => "form"}
                       .screen-reader-response
                       %div{:method => "post", :novalidate => "novalidate",:id => "f-contact"}
+                        {% editable_text block_content %}
                         %p{:style => "margin-bottom : 0px"}
                           %label
                             Your name (mandatory)
@@ -100,6 +104,7 @@ published: true
                         %p
                           %button{:id => "b-submit", :type => "button"} Submit
                         %div{:role => "alert", :style => "display: none; color : green", :id => "ssend"} Thank you for your message. It has now been shipped.
+                        {% endeditable_text %}
   
                   / .entry-content
                 / #post-##

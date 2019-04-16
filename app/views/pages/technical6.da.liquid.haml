@@ -63,26 +63,31 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-1097.post-1097.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Getting Started and Documentation
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Getting Started and Documentation
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                     .pf-content
+                      {% editable_text block_content %}
                       %p
                         Learn how to create an account for your company with you as the first user here:
-                        %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Getting-Started-1.8.1.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Getting Started.
+                        %a{:href => "/samples/Product-Data-Lake-Getting-Started-1.8.1.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Getting Started.
                       %p
                         Learn how to manage the attributes (metadata) your company is using and how to link them to those of your trading partners here:
                         = succeed "." do
-                          %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Data-Manage-Attributes-1.2.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Manage Attributes
+                          %a{:href => "/samples/Product-Data-Lake-Data-Manage-Attributes-1.2.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Manage Attributes
                       %p
                         Learn how to manage the product portfolio at your company and how to link this to those of your trading partners here:
-                        %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Data-Manage-Products-1.2.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Manage Products.
+                        %a{:href => "/samples/Product-Data-Lake-Data-Manage-Products-1.2.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Manage Products.
                       %p
                         Learn how to exchange products, attributes, relations and digital assets with your trading partners here:
-                        %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Data-Exchange-1.4.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Data Exchange.
+                        %a{:href => "/samples/Product-Data-Lake-Data-Exchange-1.4.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Data Exchange.
                       %p
                         Interested in knowing what is behind the scenes at Product Data lake? Learn it here:
-                        %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Architecture-1.7.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Architecture.
+                        %a{:href => "/samples/Product-Data-Lake-Architecture-1.7.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Architecture.
+                      {% endeditable_text %}  
                   / .entry-content
                 / #post-##
               / #main
@@ -92,8 +97,8 @@ published: true
                 %aside#media_image-15.widget.widget_media_image
                   %header.entry-header
                     %h4.widget-title Explore Our 10 Business Benefits
-                  %a{:href => "{% editable_file Gepard %}/samples/10-Business-Benefits.pdf{% endeditable_file %}"}
-                    %img.image.wp-image-1170.attachment-large.size-large{:alt => "", :height => "1024", :sizes => "(max-width: 724px) 100vw, 724px", :src => "{% editable_file Gepard %}/samples/pages/10-Business-Benefits-724x1024.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "724"}/
+                  %a{:href => "/samples/10-Business-Benefits.pdf"}
+                    %img.image.wp-image-1170.attachment-large.size-large{:alt => "", :height => "1024", :sizes => "(max-width: 724px) 100vw, 724px", :src => "{% editable_file image %}/samples/pages/10-Business-Benefits-724x1024.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "724"}/
             / #secondary
           / .row
         / .container

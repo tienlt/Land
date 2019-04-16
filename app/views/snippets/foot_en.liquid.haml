@@ -12,6 +12,7 @@
         .col.col-1-of-3
           %aside#text-6.widget.widget_text
             .textwidget
+              {% editable_text footer %}
               %p
                 %strong Product Data Lake International ApS
               %p
@@ -25,6 +26,7 @@
               %p
                 cvr: 39919060  –
                 %a{:href => "mailto:info@productdatalake.com"} info@productdatalake.com
+              {% endeditable_text %}    
         / .col
         .col.col-1-of-3
           %aside#text-8.widget.widget_text
@@ -38,7 +40,9 @@
       .col.col-1-of-1
         .footer-copyright
           #copyright
-            %p Copyright 2016 - Product Data Lake.
+            {% editable_text footer1 %}
+            %p Copyright 2019 - Product Data Lake.
+            {% endeditable_text %}    
           .go-to-top
             %a.go-to-top-link{:href => "#"}
               %i.fa.fa-angle-up

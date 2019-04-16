@@ -26,7 +26,7 @@
       {% include 'header_da' %}
       #main-slider
         .owl-carousel
-          .item{:style => "background-image: url({% editable_file Gepard %}/samples/pages/iStock-908478148-slide.jpg{% endeditable_file %}); "}
+          .item{:style => "background-image: url(/samples/pages/iStock-908478148-slide.jpg); "}
             / .caption
             /   %h2 Velkommen
             / / .caption
@@ -48,72 +48,89 @@
                 .col.col-1-of-2
                   %article.blog-post
                     .entry-thumbnail
-                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/iStock-1046171366-260x250.jpg{% endeditable_file %}", :width => "260"}/
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file iStock1 %}/samples/pages/Gepard-260x250.jpg{% endeditable_file %}", :width => "260"}/
                       .thumbhover
-                        %a.more-link.btn-business.v-center{:href => "/da/blog2"} Læs mere
+                        %a.more-link.btn-business.v-center{:href => "/da/information5"} Læs mere
                     / .entry-thumbnail
                     .blog-content
                       %header.entry-header
                         %h3.entry-title
-                          %a{:href => "/da/blog2"} Hold dig ajour med den seneste udvikling
+                          %a{:href => "/da/information5"} 
+                            {% editable_text block1_header %}
+                            Hold dig ajour med den seneste udvikling
+                            {% endeditable_text %}
+
                       / .entry-header
                       .entry-content
-                        %p
-                          Ønsker du at holde dig a jour med hvad der sker inden for Big data,...
+                        {% editable_text block1_content %}
+                        %p Ønsker du at holde dig a jour med hvad der sker inden for Big data,...
+                        {% endeditable_text %}
                     / .blog-content
                   / .blog-post
                 / .col
                 .col.col-1-of-2
                   %article.blog-post
                     .entry-thumbnail
-                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/iStock-873806068-260x250.jpg{% endeditable_file %}", :width => "260"}/
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file iStock2 %}/samples/pages/iStock-873806068-260x250.jpg{% endeditable_file %}", :width => "260"}/
                       .thumbhover
-                        %a.more-link.btn-business.v-center{:href => "/da/blog3"} Læs mere
+                        %a.more-link.btn-business.v-center{:href => "/da/information4"} Læs mere
                     / .entry-thumbnail
                     .blog-content
                       %header.entry-header
                         %h3.entry-title
-                          %a{:href => "/da/blog3"} Gratis prøveperiode
+                          %a{:href => "/da/information4"} 
+                            {% editable_text block2_header %}
+                            Nye kunder får en gratis prøveperiode på 2 måneder
+                            {% endeditable_text %}
                       / .entry-header
                       .entry-content
-                        %p
-                          Log på Product Data Lake og test. Første måned er gratis. Du kan også sende...
+                        {% editable_text block1_content %}
+                        %p Log på Product Data Lake og test. Første måned er gratis. Du kan også sende...
+                        {% endeditable_text %}
                     / .blog-content
                   / .blog-post
                 / .col
                 .col.col-1-of-2
                   %article.blog-post
                     .entry-thumbnail
-                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/iStock-912944158-260x250.jpg{% endeditable_file %}", :width => "260"}/
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file iStock3 %}/samples/pages/iStock-912944158-260x250.jpg{% endeditable_file %}", :width => "260"}/
                       .thumbhover
-                        %a.more-link.btn-business.v-center{:href => "/da/blog5"} Læs mere
+                        %a.more-link.btn-business.v-center{:href => "/da/information2"} Læs mere
                     / .entry-thumbnail
                     .blog-content
                       %header.entry-header
                         %h3.entry-title
-                          %a{:href => "/da/blog5"} Bliv Ambassadør for Product Data Lake
+                          %a{:href => "/da/information2"} 
+                            {% editable_text block3_header %}
+                            Bliv Ambassadør for Product Data Lake
+                            {% endeditable_text %}
                       / .entry-header
                       .entry-content
-                        %p
-                          Synes du at Product Data Lakes syn på den fremtidige måde at dele produktdata på...
+                        {% editable_text block1_content %}
+                        %p Synes du at Product Data Lakes syn på den fremtidige måde at dele produktdata på...
+                        {% endeditable_text %}
                     / .blog-content
                   / .blog-post
                 / .col
                 .col.col-1-of-2
                   %article.blog-post
                     .entry-thumbnail
-                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/Gepard-260x250.jpg{% endeditable_file %}", :width => "260"}/
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file iStock4 %}/samples/pages/Gepard-260x250.jpg{% endeditable_file %}", :width => "260"}/
                       .thumbhover
-                        %a.more-link.btn-business.v-center{:href => "/da/blog6"} Læs mere
+                        %a.more-link.btn-business.v-center{:href => "/da/information1"} Læs mere
                     / .entry-thumbnail
                     .blog-content
                       %header.entry-header
                         %h3.entry-title
-                          %a{:href => "/da/blog6"} Lyntest Jeres virksomhed
+                          %a{:href => "/da/information1"} 
+                            {% editable_text block4_header %}
+                            Lyntest Jeres virksomhed
+                            {% endeditable_text %}
                       / .entry-header
                       .entry-content
-                        %p
-                          Test om Jeres virksomhed udveksler produktdata i sneglefart eller som som en gepard.. powered by...
+                        {% editable_text block1_content %}
+                        %p Test om Jeres virksomhed udveksler produktdata i sneglefart eller som som en gepard.. powered by...
+                        {% endeditable_text %}
                     / .blog-content
                   / .blog-post
                 / .col
@@ -169,7 +186,6 @@
             result.push(i)
           }
         }
-        debugger
         var html = ``;
         for (i = 0; i < result.length; i++) { 
           html = html + `

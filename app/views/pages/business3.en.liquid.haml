@@ -63,9 +63,13 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-96.post-96.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title I have an E-shop
+                    %h1.entry-title
+                      {% editable_text block_header %}
+                      I have an E-shop
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
+                    {% editable_text block_content %}
                     %p Gain constant access to 100% correct, fulfilling, and updated data about the products that you sell. All your suppliers’ data is converted to the exact same format, the one in which you prefer to receive it. Their product data is automatically “pushed” into your system to the extent that you desire. That way, you can provide your customers with proper product information, make them feel safe, and increase your sales.
                     %p A vital precondition for a sale is that you have proper and updated information about the products you buy, and that your customers have the right information about the products they buy from you.
                     %p Product Data Lake is a cloud-based solution that automatically converts and “pushes” product data from your suppliers into your system, regardless of the system that you and your countless suppliers use. It is up to you to decide what data you wish to receive from each individual supplier, and your system will automatically be updated each time one of your suppliers makes changes or adds something new. Product Data Lake can either be used alone or as an add-on solution for frequently used ERP and PIM product management systems. You only pay for the data that is transmitted through the system. This guarantees you the safest and most scalable solution
@@ -107,6 +111,7 @@ published: true
                       %br/
                       %a{:href => "/en/blog"}
                         %em Check our blog and receive updates about news and optimal handling of product data
+                    {% endeditable_text %}    
                   / .entry-content
                 / #post-##
               / #main
@@ -114,8 +119,9 @@ published: true
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
                 %aside#media_image-5.widget.widget_media_image
-                  %img.image.wp-image-9.attachment-medium.size-medium{:alt => "", :height => "209", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/iStock-545588122-300x209.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                  %img.image.wp-image-9.attachment-medium.size-medium{:alt => "", :height => "209", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image %}/samples/pages/iStock-545588122-300x209.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
                 %aside#nav_menu-3.widget.widget_nav_menu
+                  {% editable_text block_content1 %}
                   %header.entry-header
                     %h4.widget-title Choose Your Business
                   .menu-business-container
@@ -128,6 +134,7 @@ published: true
                         %a{:href => "/en/business3"} I have an E-shop
                       %li#menu-item-104.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-104
                         %a{:href => "/en/business4"} I have a retail shop/chain of retail shops
+                  {% endeditable_text %}       
             / #secondary
           / .row
         / .container

@@ -65,15 +65,17 @@ published: true
                   %header.entry-header
                     %h1.entry-title Velkommen
                   / .entry-header
-                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "1279", :sizes => "(max-width: 2500px) 100vw, 2500px", :src => "{% editable_file Gepard %}/samples/pages/iStock-908478148-slide.jpg{% endeditable_file %}", :width => "2500"}/
+                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "1279", :sizes => "(max-width: 2500px) 100vw, 2500px", :src => "/samples/pages/iStock-908478148-slide.jpg", :width => "2500"}/
                   .entry-content
                   / .entry-content
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
                   %h2.screen-reader-text Post navigation
                   .nav-links
+                    {% editable_control block_content %}
                     .nav-next
                       %a{:href => "/da/blog6", :rel => "next"} Lyntest Jeres virksomhed
+                    {% endeditable_control %}
               / #main
             / #primary
           / .row

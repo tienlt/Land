@@ -63,17 +63,22 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-111.post-111.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Prices
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Prices
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
+                    {% editable_text block_content %}
                     %p Der findes følgende niveauer ved årlig forudbetaling:
                     %p
-                      %a{:href => "{% editable_file Gepard %}/samples/pages/Dansk-prisliste.png{% endeditable_file %}"}
-                        %img.alignnone.wp-image-1208{:alt => "", :height => "211", :src => "{% editable_file Gepard %}/samples/pages/Dansk-prisliste.png{% endeditable_file %}", :width => "636"}/
+                      %a{:href => "/samples/pages/Dansk-prisliste.png"}
+                        %img.alignnone.wp-image-1208{:alt => "", :height => "211", :src => "/samples/pages/Dansk-prisliste.png", :width => "636"}/
                     %p Priserne er eksklusiv moms.
                     %p Endvidere tilbydes en efterbetalt model med kvartalsvis afregning efter forbrug, hvor der er mindre spring mellem niveauerne. Skriv til info@productdatalake.com for mere information.
                     %p I begge tilfælde tilbydes en 2 måneders gratis prøveperiode.
                     %p Lige nu tilbydes også 2 timers gratis support til opstart, så i kan komme godt igang.
+                    {% endeditable_text %}
                   / .entry-content
                 / #post-##
               / #main

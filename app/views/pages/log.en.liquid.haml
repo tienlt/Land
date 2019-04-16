@@ -31,6 +31,7 @@ published: true
 #   hidden: true          # hidden for authors?
 ---
 !!!
+{% block content/main %}
 %html{:lang => "en-US"}
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
@@ -63,9 +64,13 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-58.post-58.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Log on
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Log on
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
+                    {% editable_text block_content %}
                     %p
                       Log on to your account with Product Data Lake here:
                       %br/
@@ -73,6 +78,7 @@ published: true
                     %p{:style => "text-align: center;"}
                       %em
                         %a.fasc-button.fasc-size-medium.fasc-type-glossy.fasc-rounded-medium{:href => "http://172.16.4.58:3000/landing/en#login", :style => "background-color: #33809e; color: #ffffff;", :target => "_blank"} Log on
+                    {% endeditable_text %}    
                   / .entry-content
                 / #post-##
               / #main
@@ -101,3 +107,4 @@ published: true
       var business_hub_script_vars = {"slideSpeed":"1000","autoplayTimeout":"1000"};
       /* ]]> */
     
+{% endblock %}

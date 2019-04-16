@@ -63,13 +63,18 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-750.post-750.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Kontakt os
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Kontakt os
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                     .pf-content
+                      {% editable_text block_content %}
                       %p Yderligere information kan indhentes hos
                       %p Henrik Engel, CEO (foto, mail, telefon Linkedin)
                       %p Henrik Liliendahl (foto, mail telefon, Linkedin, Twitter)
+                      {% endeditable_text %}
                   / .entry-content
                 / #post-##
               / #main

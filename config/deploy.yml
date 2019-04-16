@@ -1,9 +1,8 @@
 local:
-  host: localhost:3003
-  handle: harmonious-summit-7401
-  email: abc111@gmail.com
-  api_key: c0dcb2e4a39bb286721b99f4c138e4d9c9782185
-  
+  host: http://localhost:3003
+  handle: solitary-sands-6544
+  email: abc@gmail.com
+  api_key: 8bd9b13ffca6fe23002654b0403e446c844671a4
 staging:
   host: station.locomotive.works
   handle: my-site-staging

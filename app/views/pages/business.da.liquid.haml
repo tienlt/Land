@@ -63,12 +63,16 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-901.post-901.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Vælg din business
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Vælg din business
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                     .pf-content
+                      {% editable_text block_content %}
                       %p Vælg din type af virksomhed og se hvilke fordele du kan opnå ved at gøre brug af Product Data Lake.
-                      %p  
+                      {% endeditable_text %}
                   / .entry-content
                 / #post-##
               / #main
@@ -76,6 +80,7 @@ published: true
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
                 %aside#nav_menu-3.widget.widget_nav_menu
+                  {% editable_text block_content1 %}
                   %header.entry-header
                     %h4.widget-title VÆLG DIN BUSINESS
                   .menu-business-container
@@ -88,6 +93,7 @@ published: true
                         %a{:href => "/da/business3"} Jeg har en e-shop
                       %li#menu-item-971.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-971
                         %a{:href => "/da/business4"} Jeg har en detailbutik/kæde
+                  {% endeditable_text %}      
             / #secondary
           / .row
         / .container

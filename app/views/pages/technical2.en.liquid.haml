@@ -63,9 +63,13 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-73.post-73.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Metadata Management and International Standards
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Metadata Management and International Standards
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
+                    {% editable_text block_content %}
                     %p Trading partners can share product information either using the same metadata or linking their different metadata.
                     %p Using international, national and industry standards for product information will be the perfect solution within business ecosystem sharing of metadata and indeed this is the preferred option we support. However, there are many competing standards for product information and they come in developing versions, so having everyone on the same page at the same time is quite utopic.
                     %p Add to that everyone do not speak English – and even not the same variant of English. Metadata originates and should exist in the languages that is used in trading partnerships.
@@ -75,6 +79,7 @@ published: true
                       %li Attribute short and long descriptions can be represented in different languages.
                       %li Trading partners can link their product attributes and have visibility in Product Data Lake of the standards and descriptions used in the different languages they exist.
                     %p Examples of standards covered are UNSPSC, GPC, ETIM, eClass and Harmonized System for commodity codes.
+                    {% endeditable_text %}
                   / .entry-content
                 / #post-##
               / #main
@@ -84,7 +89,7 @@ published: true
                 %aside#media_image-3.widget.widget_media_image
                   %header.entry-header
                     %h4.widget-title Explore Our 10 Business Benefits
-                  %img.image.wp-image-89.attachment-large.size-large{:alt => "", :height => "1024", :sizes => "(max-width: 724px) 100vw, 724px", :src => "{% editable_file Gepard %}/samples/pages/10-Business-Benefits-724x1024.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "724"}/
+                  %img.image.wp-image-89.attachment-large.size-large{:alt => "", :height => "1024", :sizes => "(max-width: 724px) 100vw, 724px", :src => "{% editable_file image %}/samples/pages/10-Business-Benefits-724x1024.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "724"}/
             / #secondary
           / .row
         / .container

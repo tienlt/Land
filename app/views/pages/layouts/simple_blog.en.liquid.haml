@@ -1,5 +1,5 @@
 ---
-title: Technical5.en
+title: Simple Blog.en
 
 # true if the page is included in the menu
 listed: true
@@ -61,34 +61,38 @@ published: true
           .row
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
-                %article#post-79.post-79.page.type-page.status-publish.hentry
+                %article#post-109.post-109.page.type-page.status-publish.hentry
                   %header.entry-header
                     %h1.entry-title 
                       {% editable_text block_header %}
-                      Artificial Intelligence and Machine Learning
+                      Header Text
                       {% endeditable_text %}
                   / .entry-header
                   .entry-content
                     {% editable_text block_content %}
-                    %p The aim of the Product Data Lake service is to translate between the different taxonomies in use at trading partners for example when a manufacturer shares his product information with a merchant.
-                    %p In some cases the manufacturer, the provider of product information, may use the same standard for product information as the merchant. This may be deep standards as eCl@ss and ETIM or pure product classification standards as UNSPSC. In this case we can apply deterministic matching of the classifications and the attributes (also called properties or features).
-                    %p However, most often there are uncovered areas even when two trading partners share the same standard. And then again, the most frequent situation is that the two trading partners are using different standards.
-                    %p In that case we initially will use human resources to do the linking. Our data governance framework for that includes upstream (manufacturer) responsibility, downstream (merchant) responsibility and our ambassador concept.
-                    %p As always, applying too much human interaction is costly, time consuming and error prone. Therefore, we are very eagerly training our machines to be able to do this work in a cost-effective way, within a much shorter time frame and with a repeatable and consistent outcome to the benefit of the participating manufacturers, merchants and other enterprises involved in exchanging products and the related product information.
-                    %p
-                      In that quest we are participating in the
-                      %a{:href => "https://www.camelot-mc.com/en/client-services/information-data-management/global-community-for-artificial-intelligence-in-mdm", :rel => "noopener", :target => "_blank"} Global Community for Artificial Intelligence in MDM.
-                    {% endeditable_text %}  
+                    Header Content
+                    {% endeditable_text %}
                   / .entry-content
                 / #post-##
+                %nav.navigation.post-navigation{:role => "navigation"}
+                  %h2.screen-reader-text Post navigation
+                  .nav-links
+                    .nav-previous
+                      {% editable_text block_next %}
+                      %a{:href => "/en/blog6", :rel => "prev"} Next Post
+                      {% endeditable_text %}
+
+                    .nav-next
+                      {% editable_text block_previous %}
+                      %a{:href => "/en/blog4", :rel => "next"} Previous Post
+                      {% endeditable_text %}
               / #main
             / #primary
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
-                %aside#media_image-2.widget.widget_media_image
-                  %header.entry-header
-                    %h4.widget-title Get the Product Data Lake Overview
-                  %img.image.wp-image-33.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image %}/samples/pages/SimpleBlue-300x300.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                %aside#media_image-8.widget.widget_media_image
+                  %img.image.wp-image-22.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image %}/samples/pages/BadgeMedium-300x300.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
+
             / #secondary
           / .row
         / .container

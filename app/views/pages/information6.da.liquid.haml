@@ -63,10 +63,14 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-984.post-984.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Q &amp; A
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Q &amp; A
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
                     .pf-content
+                      {% editable_text block_content %}
                       %p
                         %strong Her er ofte stillede spørgsmål og svar om Product Data Lake (PDL).
                       %p
@@ -138,6 +142,7 @@ published: true
                         %strong 12) Mange af vores leverandører har deres egne portaler, som vi skal ind på for at hente data. Kan det ikke gøres smartere?
                         %br/
                         Jo. I kobler jer op på PDL og beder om, at jeres leverandørerer også kobler deres portaler på. Så sker der en automatisk overførsel af produktdata fra jeres leverandører til jer. Der er i jeres leverandørers interesse at I altid er opdateret med deres produktinformationer, så de vil lytte til jeres ønsker.
+                      {% endeditable_text %}  
                   / .entry-content
                 / #post-##
               / #main
@@ -145,9 +150,9 @@ published: true
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
                 %aside#media_image-9.widget.widget_media_image
-                  %img.image.wp-image-1093.attachment-medium.size-medium{:alt => "", :height => "250", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/iStock-1046171344-1-300x250.jpg{% endeditable_file %}",:style => "max-width: 100%; height: auto;", :width => "300"}/
+                  %img.image.wp-image-1093.attachment-medium.size-medium{:alt => "", :height => "250", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image %}/samples/pages/iStock-1046171344-1-300x250.jpg{% endeditable_file %}",:style => "max-width: 100%; height: auto;", :width => "300"}/
                 %aside#media_image-10.widget.widget_media_image
-                  %img.image.wp-image-1094.attachment-medium.size-medium{:alt => "", :height => "182", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/iStock-622427386-300x182.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                  %img.image.wp-image-1094.attachment-medium.size-medium{:alt => "", :height => "182", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image1 %}/samples/pages/iStock-622427386-300x182.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
             / #secondary
           / .row
         / .container

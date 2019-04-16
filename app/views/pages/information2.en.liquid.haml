@@ -63,15 +63,21 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-109.post-109.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title Become Ambassador to PDL
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Become Ambassador to PDL
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
-                    %p Do you think the future way of sharing product data is just as exciting as we do, then become part of our team. We wish to work with ambassadors who can contribute and share knowledge on the subject and make companies use our platform and guide them…
+                    {% editable_text block_content %}
+                    %p 
+                      Do you think the future way of sharing product data is just as exciting as we do, then become part of our team. We wish to work with ambassadors who can contribute and share knowledge on the subject and make companies use our platform and guide them…
                     %p
                       Read more here:
                       = succeed "." do
-                        %a{:href => "{% editable_file Gepard %}/samples/Product-Data-Lake-Ambassador-1.8.pdf{% endeditable_file %}", :rel => "noopener", :target => "_blank"} Product Data Lake Ambassador
+                        %a{:href => "/samples/Product-Data-Lake-Ambassador-1.8.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Ambassador
                     %p  
+                    {% endeditable_text %}
                   / .entry-content
                 / #post-##
               / #main
@@ -79,7 +85,7 @@ published: true
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
                 %aside#media_image-8.widget.widget_media_image
-                  %img.image.wp-image-22.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/BadgeMedium-300x300.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                  %img.image.wp-image-22.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image %}/samples/pages/BadgeMedium-300x300.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
             / #secondary
           / .row
         / .container

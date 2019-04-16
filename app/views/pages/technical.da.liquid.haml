@@ -63,11 +63,16 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-744.post-744.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title The Technical Set-up
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      The Technical Set-up
+                      {% endeditable_text %} 
                   / .entry-header
                   .entry-content
                     .pf-content
+                      {% editable_text block_content %}
                       %p (Lad os beskrive en samhandels case hvor fordele for såvel en Up streamer og en Down streamer belyses. Ikke ret meget tekst men gerne med billeder eller endnu bedre en kort film)
+                      {% endeditable_text %}
                   / .entry-content
                 / #post-##
               / #main

@@ -28,7 +28,7 @@
       {% include 'header_en' %}
       #main-slider
         .owl-carousel
-          .item{:style => "background-image: url({% editable_file Gepard %}/samples/pages/iStock-908478148-slide.jpg{% endeditable_file %}); "}
+          .item{:style => "background-image: url({% editable_file Intro %}/samples/pages/iStock-908478148-slide.jpg{% endeditable_file %}); "}
             / .caption
             /   %h2 Welcome
             / / .caption
@@ -50,72 +50,90 @@
                 .col.col-1-of-2
                   %article.blog-post
                     .entry-thumbnail
-                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/Gepard-260x250.jpg{% endeditable_file %}", :width => "260"}/
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file iStock1 %}/samples/pages/Gepard-260x250.jpg{% endeditable_file %}", :width => "260"}/
                       .thumbhover
-                        %a.more-link.btn-business.v-center{:href => "/en/blog1"} Read More
+                        %a.more-link.btn-business.v-center{:href => "/en/information1"} Read More
                     / .entry-thumbnail
                     .blog-content
                       %header.entry-header
                         %h3.entry-title
-                          %a{:href => "/en/blog1"} Flashtest Your Business
+                          %a{:href => "/en/information1"} 
+                            {% editable_text block1_header %}
+                            Flashtest Your Business
+                            {% endeditable_text %}
+
                       / .entry-header
                       .entry-content
-                        %p
-                          Test if your company exchange data with the speed of a gepard or a snail...
+                        {% editable_text block1_content %}
+                        %p Test if your company exchange data with the speed of a gepard or a snail...
+                        {% endeditable_text %}
                     / .blog-content
                   / .blog-post
                 / .col
                 .col.col-1-of-2
                   %article.blog-post
                     .entry-thumbnail
-                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/iStock-912944158-260x250.jpg{% endeditable_file %}", :width => "260"}/
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file iStock2 %}/samples/pages/iStock-912944158-260x250.jpg{% endeditable_file %}", :width => "260"}/
                       .thumbhover
-                        %a.more-link.btn-business.v-center{:href => "/en/blog2"} Read More
+                        %a.more-link.btn-business.v-center{:href => "/en/information2"} Read More
                     / .entry-thumbnail
                     .blog-content
                       %header.entry-header
                         %h3.entry-title
-                          %a{:href => "/en/blog2"} Become Ambassador to Product Data Lake
+                          %a{:href => "/en/information2"} 
+                            {% editable_text block2_header %}
+                            Become Ambassador to Product Data Lake
+                            {% endeditable_text %}
                       / .entry-header
                       .entry-content
-                        %p
-                          Do you think the future way of sharing product data is just as exciting as...
+                        {% editable_text block2_content %}
+                        %p Do you think the future way of sharing product data is just as exciting as...
+                        {% endeditable_text %}
+
                     / .blog-content
                   / .blog-post
                 / .col
                 .col.col-1-of-2
                   %article.blog-post
                     .entry-thumbnail
-                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/iStock-873806068-260x250.jpg{% endeditable_file %}", :width => "260"}/
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file iStock3 %}/samples/pages/iStock-873806068-260x250.jpg{% endeditable_file %}", :width => "260"}/
                       .thumbhover
-                        %a.more-link.btn-business.v-center{:href => "/en/blog3"} Read More
+                        %a.more-link.btn-business.v-center{:href => "/en/information5"} Read More
                     / .entry-thumbnail
                     .blog-content
                       %header.entry-header
                         %h3.entry-title
-                          %a{:href => "/en/blog3"} Free Trial
+                          %a{:href => "/en/information5"}
+                            {% editable_text block3_header %} 
+                            Free Trial
+                            {% endeditable_text %}
                       / .entry-header
                       .entry-content
-                        %p
-                          Log on and test our system. You get 2 month for free and we help...
+                        {% editable_text block3_content %}
+                        %p Log on and test our system. You get 2 month for free and we help...
+                        {% endeditable_text %}
                     / .blog-content
                   / .blog-post
                 / .col
                 .col.col-1-of-2
                   %article.blog-post
                     .entry-thumbnail
-                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file Gepard %}/samples/pages/iStock-1046171366-260x250.jpg{% endeditable_file %}", :width => "260"}/
+                      %img.attachment-business-hub-blog.size-business-hub-blog.wp-post-image{:alt => "", :height => "250", :src => "{% editable_file iStock4 %}/samples/pages/iStock-1046171366-260x250.jpg{% endeditable_file %}", :width => "260"}/
                       .thumbhover
-                        %a.more-link.btn-business.v-center{:href => "/en/blog4"} Read More
+                        %a.more-link.btn-business.v-center{:href => "/en/information7"} Read More
                     / .entry-thumbnail
                     .blog-content
                       %header.entry-header
                         %h3.entry-title
-                          %a{:href => "/en/blog4"} Stay Up to Date with the Latest News
+                          %a{:href => "/en/information7"} 
+                            {% editable_text block4_header %}
+                            Stay Up to Date with the Latest News
+                            {% endeditable_text %}  
                       / .entry-header
                       .entry-content
-                        %p
-                          Do you wish to be kept a jour with the latest news when it comes...
+                        {% editable_text block4_content %}
+                        %p Do you wish to be kept a jour with the latest news when it comes...
+                        {% endeditable_text %}  
                     / .blog-content
                   / .blog-post
                 / .col

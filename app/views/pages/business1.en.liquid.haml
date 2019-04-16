@@ -63,9 +63,13 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-92.post-92.page.type-page.status-publish.hentry
                   %header.entry-header
-                    %h1.entry-title I am a Manufacturer
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      I am a Manufacturer
+                      {% endeditable_text %}
                   / .entry-header
                   .entry-content
+                    {% editable_text block_content %}
                     %p
                       %strong Make it easy, inexpensive, and effective for your customers to purchase and resell your products. Your product data is automatically ”pushed” forward to your customers, which helps increase your sales and their sales at the same time.
                     %p A vital precondition for a sale is that your customers have proper information about your products when buying and reselling them.
@@ -108,6 +112,7 @@ published: true
                       %br/
                       %a{:href => "/en/blog/"}
                         %em Check our blog and receive updates about news and optimal handling of product data
+                    {% endeditable_text %}    
                   / .entry-content
                 / #post-##
               / #main
@@ -115,8 +120,9 @@ published: true
             #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
               .sidebar
                 %aside#media_image-6.widget.widget_media_image
-                  %img.image.wp-image-8.attachment-medium.size-medium{:alt => "", :height => "200", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file Gepard %}/samples/pages/iStock-530941964-300x200.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                  %img.image.wp-image-8.attachment-medium.size-medium{:alt => "", :height => "200", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image %}/samples/pages/iStock-530941964-300x200.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
                 %aside#nav_menu-4.widget.widget_nav_menu
+                  {% editable_text block_content1 %}
                   %header.entry-header
                     %h4.widget-title Choose Your Business
                   .menu-business-container
@@ -129,6 +135,7 @@ published: true
                         %a{:href => "/en/business3"} I have an E-shop
                       %li#menu-item-104.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-104
                         %a{:href => "/en/business4"} I have a retail shop/chain of retail shops
+                  {% endeditable_text %}      
             / #secondary
           / .row
         / .container
