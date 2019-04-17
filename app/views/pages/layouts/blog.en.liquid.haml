@@ -1,5 +1,5 @@
 ---
-title: Simple Blog.da
+title: Blog.en
 
 # true if the page is included in the menu
 listed: true
@@ -55,13 +55,13 @@ published: true
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_da' %}
+      {% include 'header_en' %}
       #content.site-content
         .container
           .row
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
-                %article#post-752.post-752.page.type-page.status-publish.has-post-thumbnail.hentry
+                %article#post-109.post-109.page.type-page.status-publish.hentry
                   %header.entry-header
                     %h1.entry-title 
                       {% editable_text block_header %}
@@ -69,10 +69,9 @@ published: true
                       {% endeditable_text %}
                   / .entry-header
                   .entry-content
-                    .pf-content
-                      {% editable_text block_content %}
-                      Header Content
-                      {% endeditable_text %}
+                    {% editable_text block_content %}
+                    Header Content
+                    {% endeditable_text %}
                   / .entry-content
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
@@ -89,15 +88,11 @@ published: true
                       {% endeditable_text %}
               / #main
             / #primary
-            #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
-              .sidebar
-                %aside#media_image-21.widget.widget_media_image
-                  %img.image.wp-image-1115.attachment-medium.size-medium{:alt => "", :height => "300", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image %}/samples/pages/BadgeMedium-300x300.png{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
             / #secondary
           / .row
         / .container
       / #content
-      {% include 'foot_da' %}
+      {% include 'foot_en' %}
     / #page
     {% include 'cookie1' %}
     {% include 'cookie2' %}
