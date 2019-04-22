@@ -62,7 +62,9 @@ published: true
             #primary.content-area.col.col-2-of-3
               %main#main.site-main{:role => "main"}
                 %header
-                  %h1.page-title.screen-reader-text Blog
+                  %h1.page-title.screen-reader-text 
+                  {% editable_text block_header %}
+                  Blog
                 %article#post-19.post-category-wrapper.post-19.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-blog
                   .row
                     .col.col-1-of-3

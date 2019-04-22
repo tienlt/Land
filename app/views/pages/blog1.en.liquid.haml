@@ -63,9 +63,10 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-142.post-142.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
                   %header.entry-header
-                    {% editable_text blog1_header %}
-                    %h1.entry-title Flashtest Your Business
-                    {% endeditable_text %}
+                    %h1.entry-title
+                      {% editable_text block_header %} 
+                      Flashtest Your Business
+                      {% endeditable_text %}
                   .entry-content
                     {% editable_text blog1_content %}
                     %p Test if your company exchange data with the speed of a gepard or a snail
@@ -76,14 +77,16 @@ published: true
                         (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
                     %div{:style => "font-family: Sans-Serif; font-size: 12px; color: #999; opacity: 0.5; padding-top: 5px;"}
                       powered by
-                      %a{:href => "https://admin.typeform.com/signup?utm_campaign=wHCubP&utm_source=typeform.com-12787555-Pro&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN", :rel => "noopener", :style => "color: #999;", :target => "_blank"} Typeform
+                      %a{:href => "https://admin.typeform.com/signup?utm_campaign=wHCubP&utm_source=typeform.com-12787555-Pro&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN", :rel => "noopener", :style => "color: #999;", :target => "_blank"} Typeform 
                   / .entry-content
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-previous
+                      {% editable_text block_previous %}
                       %a{:href => "/en/blog2", :rel => "prev"} Become Ambassador to Product Data Lake
+                      {% endeditable_text %}
               / #main
             / #primary
           / .row

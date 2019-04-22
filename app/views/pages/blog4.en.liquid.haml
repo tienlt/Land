@@ -63,10 +63,14 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-136.post-136.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
                   %header.entry-header
-                    %h1.entry-title Stay Up to Date with the Latest News
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Stay Up to Date with the Latest News
+                      {% endeditable_text %}
                   / .entry-header
-                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "3000", :sizes => "(max-width: 3000px) 100vw, 3000px", :src => "/samples/pages/iStock-1046171366.jpg", :width => "3000"}/
+                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "3000", :sizes => "(max-width: 3000px) 100vw, 3000px", :src => "{% editable_file image %}/samples/pages/iStock-1046171366.jpg {% endeditable_file %}", :width => "3000"}/
                   .entry-content
+                    {% editable_text block_content %}
                     %p
                       Do you wish to be kept a jour with the latest news when it comes Big data, Product Data Management og Product Information Management, then please sign up here
                       = succeed ". Then we send you an e-mail when exciting news, trends and new solutions show up." do
@@ -79,15 +83,20 @@ published: true
                       %br/
                       Follow Product Data Lake on
                       %a{:href => "https://twitter.com/ProductDataLake", :rel => "noopener", :target => "_blank"} Twitter
+                    {% endeditable_text %}  
                   / .entry-content
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-previous
+                      {% editable_text block_previous %}
                       %a{:href => "/en/blog5", :rel => "prev"} Welcome
+                      {% endeditable_text %}
                     .nav-next
+                      {% editable_text block_next %}
                       %a{:href => "/en/blog3", :rel => "next"} Free Trial
+                      {% endeditable_text %}
               / #main
             / #primary
           / .row

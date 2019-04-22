@@ -63,11 +63,15 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-895.post-895.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
                   %header.entry-header
-                    %h1.entry-title Hold dig ajour med den seneste udvikling
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Hold dig ajour med den seneste udvikling
+                      {% endeditable_text %}
                   / .entry-header
                   / %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "3000", :sizes => "(max-width: 3000px) 100vw, 3000px", :src => "/samples/pages/iStock-1046171366.jpg", :width => "3000"}/
                   .entry-content
                     .pf-content
+                      {% editable_text block_content %}
                       %p
                         Ønsker du at holde dig a jour med hvad der sker inden for Big data, Product Data Management og Product Information Management, så tilmeld dig
                         = succeed ". Så mailer vi når der er nye trends, nye løsninger eller andre spændende nyheder på vej." do
@@ -80,15 +84,20 @@ published: true
                         %br/
                         Følg Product Data Lake på
                         %a{:href => "https://twitter.com/ProductDataLake", :rel => "noopener", :target => "_blank"} Twitter
+                      {% endeditable_text %}  
                   / .entry-content
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-previous
+                      {% editable_text block_previous %}
                       %a{:href => "/da/blog3", :rel => "prev"} Gratis prøveperiode
+                      {% endeditable_text %}
                     .nav-next
+                      {% editable_text block_next %}
                       %a{:href => "/da/blog1", :rel => "next"} The Long Tail of Product Data Synchronization
+                      {% endeditable_text %}
               / #main
             / #primary
           / .row

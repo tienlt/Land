@@ -63,11 +63,15 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-1144.post-1144.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-blog
                   %header.entry-header
-                    %h1.entry-title The Long Tail of Product Data Synchronization
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      The Long Tail of Product Data Synchronization
+                      {% endeditable_text %}
                   .entry-header
                   / %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "636", :sizes => "(max-width: 1172px) 100vw, 1172px", :src => "/samples/pages/EDI-GDSN-PDL-1024x556.png", :width => "1172"}/
                   .entry-content
                     .pf-content
+                      {% editable_text block_content %}
                       %p
                         When discussing with peers and interested parties about
                         = succeed "," do
@@ -93,6 +97,7 @@ published: true
                         is a cloud service for sharing product information (product data syndication) in the business ecosystems of manufacturers, distributors / wholesalers, merchants, marketplaces and large end users of product information.
                       %p Our vision is that Product Data Lake will be the process driven key service for exchanging any sort of product information within business ecosystems all over the world, with the aim of optimally assist self-service purchase – both B2C and B2B – of every kind of product.
                       %p In that way, Product Data Lake is the long tail of product data synchronization supplementing EDI and GDSN for a long range of product groups, product attributes, digital assets, product relationships and product classification systems:
+                      {% endeditable_text %} 
                       %p
                         %img.alignnone.size-full.wp-image-20792{:alt => "EDI GDSN PDL", "data-attachment-id" => "20792", "data-comments-opened" => "1", "data-image-description" => "", :src => "{% editable_file image %}/samples/pages/edi-gdsn-pdl1.png{% endeditable_file %}"}/
                       %p
@@ -105,7 +110,9 @@ published: true
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-previous
+                      {% editable_text block_previous %}
                       %a{:href => "/da/blog2", :rel => "prev"} Hold dig ajour med den seneste udvikling
+                      {% endeditable_text %}
               / #main
             / #primary
           / .row

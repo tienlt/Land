@@ -63,17 +63,24 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-801.post-801.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-slider
                   %header.entry-header
-                    %h1.entry-title Velkommen
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Velkommen
+                      {% endeditable_text %}
                   / .entry-header
+                  {% editable_text block_content %}
                   %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "1279", :sizes => "(max-width: 2500px) 100vw, 2500px", :src => "/samples/pages/iStock-908478148-slide.jpg", :width => "2500"}/
                   .entry-content
                   / .entry-content
+                  {% endeditable_text %} 
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-next
+                      {% editable_text block_next %}
                       %a{:href => "/da/blog6", :rel => "next"} Lyntest Jeres virksomhed
+                      {% endeditable_text %}
               / #main
             / #primary
           / .row

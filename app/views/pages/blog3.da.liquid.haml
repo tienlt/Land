@@ -63,21 +63,30 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-893.post-893.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
                   %header.entry-header
-                    %h1.entry-title Gratis prøveperiode
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Gratis prøveperiode
+                      {% endeditable_text %}
                   / .entry-header
                   / %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "3333", :sizes => "(max-width: 5000px) 100vw, 5000px", :src => "/samples/pages/iStock-873806068.jpg", :width => "5000"}/
                   .entry-content
                     .pf-content
+                      {% editable_text block_content %}
                       %p Log på Product Data Lake og test. Første måned er gratis. Du kan også sende os en mail, så hjælper vi dig igang. Send mail her.
+                      {% endeditable_text %}
                   / .entry-content
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-previous
+                      {% editable_text block_previous %}
                       %a{:href => "/da/blog4", :rel => "prev"} Hvad kan vi?
+                      {% endeditable_text %}
                     .nav-next
+                      {% editable_text block_next %}
                       %a{:href => "/da/blog2", :rel => "next"} Hold dig ajour med den seneste udvikling
+                      {% endeditable_text %}
               / #main
             / #primary
           / .row

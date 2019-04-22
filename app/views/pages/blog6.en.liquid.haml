@@ -63,10 +63,14 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-19.post-19.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-blog
                   %header.entry-header
-                    %h1.entry-title The Long Tail of Product Data Synchronization
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      The Long Tail of Product Data Synchronization
+                      {% endeditable_text %}
                   / .entry-header
                   %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "556", :sizes => "(max-width: 1024px) 100vw, 1024px", :src => "/samples/pages/EDI-GDSN-PDL-1024x556.png", :width => "1024"}/
                   .entry-content
+                    {% editable_text block_content %}
                     %p
                       When discussing with peers and interested parties about
                       = succeed "," do
@@ -98,13 +102,16 @@ published: true
                       Find out more in the
                       = succeed "." do
                         %a{:href => "/samples/Product-Data-Lake-Overview-1.8.pdf", :rel => "noopener", :target => "_blank"} Product Data Lake Overview
+                    {% endeditable_text %}    
                   / .entry-content
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-next
+                      {% editable_text block_next %}
                       %a{:href => "/en/blog5", :rel => "next"} Welcome
+                      {% endeditable_text %}
               / #main
             / #primary
           / .row

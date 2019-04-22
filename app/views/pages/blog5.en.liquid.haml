@@ -63,9 +63,12 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-35.post-35.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-slider
                   %header.entry-header
-                    %h1.entry-title Welcome
+                    %h1.entry-title 
+                      {% editable_text block_header %}
+                      Welcome
+                      {% endeditable_text %}
                   / .entry-header
-                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "1279", :sizes => "(max-width: 2500px) 100vw, 2500px", :src => "/samples/pages/iStock-908478148-slide.jpg", :width => "2500"}/
+                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "1279", :sizes => "(max-width: 2500px) 100vw, 2500px", :src => "{% editable_file image %}/samples/pages/iStock-908478148-slide.jpg{% endeditable_file %}", :width => "2500"}/
                   .entry-content
                   / .entry-content
                 / #post-##
@@ -73,9 +76,13 @@ published: true
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-previous
+                      {% editable_text block_previous %}
                       %a{:href => "/en/blog6", :rel => "prev"} The Long Tail of Product Data Synchronization
+                      {% endeditable_text %}
                     .nav-next
+                      {% editable_text block_next %}
                       %a{:href => "/en/blog4", :rel => "next"} Stay Up to Date with the Latest News
+                      {% endeditable_text %}
               / #main
             / #primary
           / .row

@@ -63,20 +63,29 @@ published: true
               %main#main.site-main{:role => "main"}
                 %article#post-138.post-138.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-om-os
                   %header.entry-header
-                    %h1.entry-title Free Trial
+                    %h1.entry-title
+                      {% editable_text block_header %}
+                      Free Trial
+                      {% endeditable_text %}
                   / .entry-header
-                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "3333", :sizes => "(max-width: 5000px) 100vw, 5000px", :src => "/samples/pages/iStock-873806068.jpg", :width => "5000"}/
+                  %img.attachment-full.size-full.wp-post-image{:alt => "", :height => "3333", :sizes => "(max-width: 5000px) 100vw, 5000px", :src => "{% editable_file image %}/samples/pages/iStock-873806068.jpg{% endeditable_file %}", :width => "5000"}/
                   .entry-content
+                    {% editable_text block_content %}
                     %p Log on and test our system. You get 2 month for free and we help you to get started. Send us and e-mail if you need help.
+                    {% endeditable_text %}
                   / .entry-content
                 / #post-##
                 %nav.navigation.post-navigation{:role => "navigation"}
                   %h2.screen-reader-text Post navigation
                   .nav-links
                     .nav-previous
+                      {% editable_text block_previous %}
                       %a{:href => "/en/blog4", :rel => "prev"} Stay Up to Date with the Latest News
+                      {% endeditable_text %}
                     .nav-next
+                      {% editable_text block_next %}
                       %a{:href => "/en/blog2", :rel => "next"} Become Ambassador to Product Data Lake
+                      {% endeditable_text %}
               / #main
             / #primary
           / .row
