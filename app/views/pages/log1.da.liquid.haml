@@ -70,12 +70,14 @@ published: true
                   / .entry-header
                   .entry-content
                     .pf-content
-                      {% editable_text block_content %}
+                      {% editable_text block_content1 %}
                       %p Opret dig i Product Data Lake og inviter evt. en af dine samhandelspartnere til at gøre det samme. Så kan i med det samme og uden omkostninger begynde at udveksle informationer.
+                      {% endeditable_text %}
                       %p  
                       %p{:style => "text-align: center;"}
                         %em
                           %a.fasc-button.fasc-size-medium.fasc-type-glossy.fasc-rounded-medium{:href => "http://172.16.4.58:3000/landing/da#ssignup", :rel => "noopener", :style => "background-color: #33809e; color: #ffffff;", :target => "_blank"} Opret dig her
+                      {% editable_text block_content2 %}
                       %p
                         Her finder du en vejleding om hvordan du opretter dit firma med dig selv som den første bruger hos jer:
                         = succeed "." do

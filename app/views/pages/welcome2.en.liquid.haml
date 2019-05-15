@@ -1,5 +1,5 @@
 ---
-title: Wellcome2.da
+title: Welcome2
 
 # true if the page is included in the menu
 listed: true
@@ -55,7 +55,7 @@ published: true
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", :type => "text/javascript"}
   %body.home.page-template-default.page.page-id-662.page-parent.wp-custom-logo.right-sidebar
     #page.site
-      {% include 'header_da' %}
+      {% include 'header_en' %}
       #primary-home.content-area
         %main#main.site-main{:role => "main"}
           %section.blog-news
@@ -67,20 +67,20 @@ published: true
                       %header.entry-header
                         %h1.entry-title 
                           {% editable_text block_header %}
-                          Sådan kommer du i gang
+                          How to get started
                           {% endeditable_text %}
                       / .entry-header
                       .entry-content
                         .pf-content
                           {% editable_text block_content %}
                           %p
-                            Det er nemt at komme igang og prøve Product Data Lake. Opret en konto og begynd at lægge dine data ind. Det er den bedste måde at prøve systemet af på uden det koster dig noget. De 2 første måneder er gratis. Følg vejledning
-                            %a{:href => "/da/technical6"} “Getting started”.
+                            It’s easy to get started with Product Data Lake and to put it to the test. Sign in, create an account and start uploading your data. This is the best way to test the platform without having to pay for it. The first two months are free of charge.
                           %p
-                            Vi hjælper dig hvis du skulle have brug for hjælp eller ønsker mere information.
-                            = succeed "." do
-                              %a{:href => "/da/information8"} Kontakt os her – link
-                          {% endeditable_text %}    
+                            Please click on
+                            %a{:href => "/en/technical6"} ”Getting started”
+                            and follow the instructions. If you need further information and help, we will be glad to assist you. Please contact us by using 
+                            %a{:href => "/en/information8"} our contact formula.
+                          {% endeditable_text %}      
                       / .entry-content
                     / #post-##
                   / #main
@@ -88,7 +88,7 @@ published: true
                 #secondary.widget-area.col.col-1-of-3{:role => "complementary"}
                   .sidebar
                     %aside#media_image-11.widget.widget_media_image
-                      %img.image.wp-image-1095.attachment-medium.size-medium{:alt => "", :height => "200", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image %}/samples/pages/iStock-903770892-300x200.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}/
+                      %img.image.wp-image-1095.attachment-medium.size-medium{:alt => "", :height => "200", :sizes => "(max-width: 300px) 100vw, 300px", :src => "{% editable_file image %}/samples/pages/iStock-903770892-300x200.jpg{% endeditable_file %}", :style => "max-width: 100%; height: auto;", :width => "300"}
                 / #secondary
               / .row
             / .container
@@ -101,7 +101,7 @@ published: true
           / .row
         / .container
       / #content
-      {% include 'foot_da' %}
+      {% include 'foot_en' %}
     / #page
     {% include 'cookie1' %}
     {% include 'cookie2' %}

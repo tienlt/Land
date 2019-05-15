@@ -73,17 +73,20 @@ published: true
                     #wpcf7-f34-p119-o1.wpcf7{:dir => "ltr", :lang => "da-DK", :role => "form"}
                       .screen-reader-response
                       %div{:method => "post", :novalidate => "novalidate",:id => "f-contact"}
-                        {% editable_text block_content %}
                         %p{:style => "margin-bottom : 0px"}
                           %label
+                            {% editable_text block_content1 %}
                             Your name (mandatory)
+                            {% endeditable_text %}
                             %br/
                             %span.wpcf7-form-control-wrap.your-name
                               %input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{"aria-invalid" => "false", "aria-required" => "true",:id => "b-name", :name => "your-name", :size => "40", :type => "text", :value => ""}/
                               %p{:style => "display: none; color : red", :id => "sb-name"} Please enter require field.
                         %p{:style => "margin-bottom : 0px"}
                           %label
+                            {% editable_text block_content2 %}
                             Your email (mandatory)
+                            {% endeditable_text %}
                             %br/
                             %span.wpcf7-form-control-wrap.your-email
                               %input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email{"aria-invalid" => "false",:id => "b-email", "aria-required" => "true", :name => "your-email", :size => "40", :type => "email", :value => ""}/
@@ -91,21 +94,23 @@ published: true
                               %p{:style => "display: none; color : red", :id => "ssb-email"} The e-mail address entered is invalid.
                         %p
                           %label
+                            {% editable_text block_content3 %}
                             Subject
+                            {% endeditable_text %}
                             %br/
                             %span.wpcf7-form-control-wrap.your-subject
                               %input.wpcf7-form-control.wpcf7-text{"aria-invalid" => "false",:id => "b-subject", :name => "your-subject", :size => "40", :type => "text", :value => ""}/
                         %p
                           %label
+                            {% editable_text block_content4 %}
                             Your message
+                            {% endeditable_text %}
                             %br/
                             %span.wpcf7-form-control-wrap.your-message
                               %textarea.wpcf7-form-control.wpcf7-textarea{"aria-invalid" => "false",:id => "b-message", :cols => "40", :name => "your-message", :rows => "10"}
                         %p
                           %button{:id => "b-submit", :type => "button"} Submit
                         %div{:role => "alert", :style => "display: none; color : green", :id => "ssend"} Thank you for your message. It has now been shipped.
-                        {% endeditable_text %}
-  
                   / .entry-content
                 / #post-##
               / #main

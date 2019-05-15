@@ -26,7 +26,7 @@
       {% include 'header_da' %}
       #main-slider
         .owl-carousel
-          .item{:style => "background-image: url(/samples/pages/iStock-908478148-slide.jpg); "}
+          .item{:style => "background-image: url({% editable_file Intro %}/samples/pages/iStock-908478148-slide.jpg{% endeditable_file %}); "}
             / .caption
             /   %h2 Velkommen
             / / .caption
@@ -84,7 +84,7 @@
                             {% endeditable_text %}
                       / .entry-header
                       .entry-content
-                        {% editable_text block1_content %}
+                        {% editable_text block2_content %}
                         %p Log på Product Data Lake og test. Første måned er gratis. Du kan også sende...
                         {% endeditable_text %}
                     / .blog-content
@@ -106,7 +106,7 @@
                             {% endeditable_text %}
                       / .entry-header
                       .entry-content
-                        {% editable_text block1_content %}
+                        {% editable_text block3_content %}
                         %p Synes du at Product Data Lakes syn på den fremtidige måde at dele produktdata på...
                         {% endeditable_text %}
                     / .blog-content
@@ -128,7 +128,7 @@
                             {% endeditable_text %}
                       / .entry-header
                       .entry-content
-                        {% editable_text block1_content %}
+                        {% editable_text block4_content %}
                         %p Test om Jeres virksomhed udveksler produktdata i sneglefart eller som som en gepard.. powered by...
                         {% endeditable_text %}
                     / .blog-content
